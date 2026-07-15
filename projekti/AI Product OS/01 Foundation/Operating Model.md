@@ -1,7 +1,8 @@
 # Operating Model
 
 Version: 1.0
-Status: Draft
+Status: Approved
+Governance State: Frozen — modification requires an approved RFC. See [[Request for Change (RFC) Process]].
 Owner: Founder
 Related Documents:
 - [[AI Product OS Constitution]]

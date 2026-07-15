@@ -44,6 +44,29 @@ No downstream product (including NorthStar) requires any action as a result of t
 
 ---
 
+# v0.1 — Foundation Review and Freeze
+
+Status: Recorded
+Date: 2026-07-15
+
+## Summary
+
+A full consistency review was performed across the Foundation: [[AI Product OS Constitution]], [[Operating Model]], [[Organization Charter]], [[Repository Standard]], [[Request for Change (RFC) Process]], [[Release Management]], [[Founder Contract]], [[Product Architect Contract]], [[Design Lead Contract]], [[Engineering Lead Contract]], [[Quality Guardian Contract]], [[Agent Contract Template]], [[Workflow Overview]], and this CHANGELOG. No unresolved conflicts were found in consistency, governance, authority, ownership, workflow, repository, versioning, RFC compliance, release consistency, or document relationships.
+
+As a result, the three Foundation Documents moved from Draft to Approved and were formally frozen — each now requires an approved RFC to modify:
+
+- [[AI Product OS Constitution]] — Status: Approved, Frozen.
+- [[Operating Model]] — Status: Approved, Frozen.
+- [[Organization Charter]] — Status: Approved, Frozen.
+
+This entry resolves the open item noted in the initial v0.1 entry above, where these documents remained Draft despite the release being marked Foundation Complete.
+
+## Notes
+
+No other document's status was changed by this review. No architecture was modified — this entry records a status change only.
+
+---
+
 # Unreleased
 
 Nothing pending at this time.

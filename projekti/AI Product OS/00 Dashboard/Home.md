@@ -36,6 +36,10 @@ The following documents are **Foundation Documents**: they define the operating 
 
 - [[Organization Charter]] — Foundation Document. Requires an approved RFC to modify.
 - [[Founder Contract]]
+- [[Product Architect Contract]]
+- [[Design Lead Contract]]
+- [[Engineering Lead Contract]]
+- [[Quality Guardian Contract]]
 
 ## 03 Workflow
 
