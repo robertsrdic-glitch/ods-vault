@@ -87,7 +87,7 @@ Proposed sequence. Numbering is independent of the closed WP-00–WP-14 series t
 
 ### OP-02 — Founder Console Adapter
 
-**Status: Architecture approved; implementation not yet started (2026-07-19).** The transport and trust-boundary blocker identified during initial implementation attempts is resolved: `ADR-014-Founder-Approval-Transport-and-Trust-Boundary.md` (Accepted) and `Founder-Console-Integration-Contract.md` (Approved), both in `projekti/Kyron7/Architecture/`, now govern this adapter. No adapter code has been written yet. This status note does not change the objective/deliverables/completion criteria/dependencies below, which remain as originally planned.
+**Status: Architecture approved; implementation not yet started (2026-07-19).** The transport and trust-boundary blocker identified during initial implementation attempts is resolved: `ADR-014-Founder-Approval-Transport-and-Trust-Boundary.md` (Accepted), `Founder-Console-Integration-Contract.md` (Approved — behavioral contract and Approved bounded interaction model, client-driven long-polling), and `Founder-Console-Wire-Protocol-Specification.md` (Approved — the concrete endpoints, JSON schemas, HTTP status model, authentication, and HMAC integrity model implementing that interaction model), all three in `projekti/Kyron7/Architecture/`, now govern this adapter. No adapter code has been written yet. This status note does not change the objective/deliverables/completion criteria/dependencies below, which remain as originally planned.
 
 - **Objective:** Implement a real, Cloudflare Access-authenticated `FounderConsolePort` channel, checked against the Founder allowlist, per ADR-002 — no interface change, and consistent with ADR-002's requirement that no AI agent expose or consume this mechanism.
 - **Expected deliverables:** a real approval channel through which a high-risk candidate is raised to the Founder Console and an approve/reject decision is received back, matching the existing WP-07 boundary.
@@ -204,6 +204,7 @@ The decision record produced at OP-09 states exactly one of the following four o
 
 **ADRs referenced (unchanged, no ADR modified by this document):**
 - ADR-002 — Founder Console Replaces Telegram Approval (Accepted) — governs the OP-02 `FounderConsolePort` live adapter
+- ADR-014 — Founder Approval Transport and Trust Boundary (Accepted) — clarifies ADR-002 for OP-02; governs the deterministic-adapter/AI-agent trust boundary, the six-field decision binding, and fail-closed requirements OP-02 must implement
 - ADR-005 — Fresh Repository Baseline for Deployment Agent MVP (Accepted) — governs where OP-01–OP-06 adapter code is built
 - ADR-006 — Technology Stack Selection for Deployment Agent MVP (Accepted) — governs the tooling OP-01–OP-06 adapters are built with
 - ADR-007 — Deployment Risk Classification Rules (Accepted) — governs classification inputs any live GitHub/execution adapter must supply
@@ -217,3 +218,5 @@ The decision record produced at OP-09 states exactly one of the following four o
 
 **Operationalization-phase planning:**
 - `Pilot-Deployment-Validation-Plan.md` — the existing, approved-scope plan this document sequences as OP-08; referenced throughout, not restated or altered
+- `Founder-Console-Integration-Contract.md` (Approved) — the OP-02 behavioral contract (request/decision semantics, security semantics) and the Approved bounded interaction model (client-driven long-polling)
+- `Founder-Console-Wire-Protocol-Specification.md` (Approved) — the concrete endpoints, JSON schemas, HTTP status model, authentication, and HMAC integrity model implementing that interaction model for OP-02

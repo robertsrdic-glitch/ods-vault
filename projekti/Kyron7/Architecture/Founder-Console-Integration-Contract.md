@@ -123,7 +123,7 @@ A separate, already-running local process maintains the actual connection to Fou
 
 **Option 2 (bounded, client-driven long-polling)** is recommended: it requires no port change, no new persistent process to operate and secure, and directly reuses the timeout-and-validation discipline OP-01 already established and had CTO-reviewed. It is more resilient than Option 1 (a single failed exchange doesn't discard the whole wait) without Option 3's added operational component, and it avoids Option 4's out-of-scope architecture change entirely.
 
-This is a recommendation for CTO and Founder review, **not an approval or a decision**. If, in practice, Founder response latency turns out to make Option 2's bounded wait routinely insufficient, Option 3 is the next-best candidate specifically because it does not require reopening `FounderConsolePort` — that trade-off is noted here for a future decision, not resolved by this document.
+**Bounded, client-driven long-polling (Option 2) is the Approved interaction model**, adopted as part of this document's Founder approval on 2026-07-19. Concrete wire-level detail — endpoints, payload shapes, authentication, and integrity signing — is delegated to the companion `Founder-Console-Wire-Protocol-Specification.md` (Approved), not defined here. If, in practice, Founder response latency turns out to make Option 2's bounded wait routinely insufficient, Option 3 is the next-best candidate specifically because it does not require reopening `FounderConsolePort` — that trade-off is noted here for a future decision, not resolved by this document.
 
 ## 5. Future-Proofing Note (Non-Normative)
 
