@@ -3,8 +3,8 @@
 ## 1. Document Control
 
 - **Type:** Implementation Plan
-- **Status:** Draft — Pending CTO Review
-- **Date:** 2026-07-18
+- **Status:** Design & Build Phase — **COMPLETED**. All work packages (WP-00 through WP-14) individually reached APPROVED per Section 6. See Project Status below.
+- **Date:** 2026-07-18 (original); Design & Build Phase closed 2026-07-19
 - **Dependencies:**
   - Kyron7 Deployment Agent MVP — Architecture Specification (Approved)
   - Kyron7 Deployment Policy Engine Specification (Approved)
@@ -16,7 +16,19 @@
   - ADR-005 — Fresh Repository Baseline for Deployment Agent MVP (Accepted)
   - ADR-010 — Deployment Agent Owns Lifecycle, Policy Engine Owns Policies (Approved)
   - ADR-011 — Independent Rollback Decision Model (Approved)
-- **Target Repository:** New Kyron7 Deployment Agent MVP repository (not yet created; the old `kyron7-operations-agent` repository is historical reference only, per ADR-005)
+- **Target Repository:** `Kyron7/deployment-agent` — created per WP-00/WP-01, per ADR-005. The old `kyron7-operations-agent` repository remains historical reference only; no code, type, or identifier from it was carried over (independently confirmed during WP-13 System Validation).
+
+### Project Status
+
+**Current Status:**
+- Design Complete
+- Founder Acceptance Completed
+- WP-14 Design Acceptance Completed
+- Pilot Deployment Validation Planned
+
+**Next Phase:** Operationalization
+
+This Implementation Plan governed the Design & Build phase only (WP-00 through WP-14). That phase is closed. See `WP-14-Design-Acceptance.md` for the formal design-acceptance record and `Pilot-Deployment-Validation-Plan.md` for the Operationalization phase's entry point. Neither document introduces new architecture, scope, or business logic — both operate strictly within what this plan and the approved Architecture Specification already define.
 
 ## 2. Purpose
 
@@ -69,6 +81,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* An initialized repository under the official name established in Section 4, with formatting and linting configuration, a CI skeleton, and a documentation bootstrap that points to the authoritative ODS Vault documents.
 - *CTO acceptance criteria:* Confirmed no business logic, deployment logic, Policy Engine, or Deployment Agent content exists in this package — environment and tooling only.
 - *Excluded work:* Repository directory structure aligned to the five approved components (WP-01); any Deployment Agent, Policy Engine, GitHub/Founder Console integration, execution, rollback, trust-model, or audit trail logic.
+- *Implementation status:* **Implemented. CTO approved.** Commit `2844a85` ("establish deployment agent MVP baseline through WP-02").
 
 **WP-01 — Repository Bootstrap**
 - *Objective:* Establish the new repository's initial structure per Section 4.
@@ -77,6 +90,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* An initialized repository matching the structure described in Section 4.
 - *CTO acceptance criteria:* Repository structure reviewed and confirmed to introduce no component beyond the five approved components; no inherited code, types, or identifiers from the old repository.
 - *Excluded work:* Any Deployment Agent, Policy Engine, or integration logic.
+- *Implementation status:* **Implemented. CTO approved.** Commit `2844a85`.
 
 **WP-02 — Deployment Agent Orchestration Skeleton**
 - *Objective:* Establish the Deployment Agent's role as orchestrator of the deployment flow.
@@ -85,6 +99,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* The structural basis for the Deployment Agent to identify a candidate deployment and request a classification, with no execution or approval logic yet attached.
 - *CTO acceptance criteria:* Confirmed that no classification, approval, or execution decision logic exists in this package — orchestration only, per Architecture Specification §6.
 - *Excluded work:* Classification, approval handling, execution, rollback.
+- *Implementation status:* **Implemented. CTO approved.** Commit `2844a85`.
 
 **WP-04 — Policy Engine: Risk Classification**
 - *Objective:* Implement the Policy Engine's classification of a candidate deployment as low-risk or high-risk.
@@ -93,6 +108,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* A Policy Engine capability that returns exactly one of two classification values for a candidate deployment.
 - *CTO acceptance criteria:* Confirmed the classification output is strictly binary (low-risk / high-risk), with no additional or graded risk levels, per Policy Engine Specification §4.
 - *Excluded work:* Concrete policy rules defining what makes a deployment low-risk or high-risk (per Policy Engine Specification §3, individual rules are out of scope of the specification itself, and therefore of this work package).
+- *Implementation status:* **Implemented. CTO approved.** Commit `a15e09c`. Concrete rules were subsequently implemented under ADR-007 (`policy-engine/classification.ts`), consistent with this package's own excluded-work note.
 
 **WP-05 — Policy Engine: Deployment Policy for Rollback**
 - *Objective:* Implement the Policy Engine's determination of whether and how rollback applies to a given execution or verification outcome.
@@ -101,6 +117,7 @@ No files or the repository itself are created by this document.
 - *CTO acceptance criteria:* Confirmed rollback determination is produced by the Policy Engine and only executed by the Deployment Agent, per Policy Engine Specification §2 and Execution Specification §2.
 - *Expected deliverables:* A Policy Engine capability that returns a rollback determination for a failed or unverified deployment outcome.
 - *Excluded work:* Execution of rollback itself (Deployment Agent's responsibility, see WP-10).
+- *Implementation status:* **Implemented. CTO approved.** Commit `8502ce2`.
 
 **WP-06 — GitHub Integration Point**
 - *Objective:* Establish how the Deployment Agent identifies a candidate deployable artifact from GitHub.
@@ -109,6 +126,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* An integration point through which the Deployment Agent becomes aware of a candidate deployable artifact in GitHub.
 - *CTO acceptance criteria:* Confirmed this package only reads from GitHub as the artifact's authoritative source and does not originate, store, or modify artifacts, per Architecture Specification §6.
 - *Excluded work:* Any artifact storage, versioning, or modification capability.
+- *Implementation status:* **Implemented. CTO approved.** Commit `51d0ae5`. Boundary/interface only — no live GitHub adapter exists; see WP-14 Design Acceptance, Outstanding Items.
 
 **WP-07 — Founder Console Approval Gate**
 - *Objective:* Establish the integration point through which the Deployment Agent requests, and receives, a Founder approval decision for a high-risk deployment.
@@ -117,6 +135,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* An integration point through which a high-risk candidate is raised to the Founder Console and an approve/reject decision is received back.
 - *CTO acceptance criteria:* Confirmed the Deployment Agent does not expose or consume the approval mechanism itself, and that approval identity verification remains the Founder Console's responsibility, per ADR-002.
 - *Excluded work:* Any Founder Console UI or capability beyond deployment approval (per Architecture Specification §3 Non-Goals).
+- *Implementation status:* **Implemented. CTO approved.** Commit `1e4869d`. Boundary/interface only — no live Founder Console channel exists yet; see WP-14 Design Acceptance, Outstanding Items.
 
 **WP-08 — Automatic Execution Path (Low-Risk)**
 - *Objective:* Implement execution of a low-risk deployment with no manual command and no user interaction.
@@ -125,6 +144,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* An execution path that proceeds automatically once the Policy Engine returns a low-risk classification, producing the recordable action and Reported outcome that WP-03 (Audit Trail Foundation) later captures.
 - *CTO acceptance criteria:* Confirmed execution proceeds only from a Policy Engine low-risk classification, with no manual trigger and no additional decision made by the Deployment Agent, per Architecture Specification §6.
 - *Excluded work:* High-risk / approval-gated execution (WP-09); rollback (WP-10).
+- *Implementation status:* **Implemented. CTO approved.** Commit `7bdd295`.
 
 **WP-09 — Manual-Approval Execution Path (High-Risk)**
 - *Objective:* Implement execution of a high-risk deployment that proceeds only after Founder approval.
@@ -133,6 +153,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* An execution path that halts on a high-risk classification, awaits the Founder's decision via WP-07, and proceeds only on approval, producing the recordable decision and outcome that WP-03 (Audit Trail Foundation) later captures.
 - *CTO acceptance criteria:* Confirmed execution does not proceed on a high-risk classification without a recorded Founder approval; confirmed a rejection halts the deployment and is recorded in the audit trail, per Architecture Specification §7.
 - *Excluded work:* Automatic execution (WP-08); rollback (WP-10).
+- *Implementation status:* **Implemented. CTO approved.** Commit `287e969`.
 
 **WP-10 — Rollback Execution**
 - *Objective:* Implement the Deployment Agent's execution of rollback according to the Policy Engine's Deployment Policy.
@@ -141,6 +162,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* A rollback execution path triggered by either of two independently evaluated Policy Engine questions — rollback-on-execution-failure and rollback-on-verification-failure, per ADR-011 — producing the recordable action that WP-03 (Audit Trail Foundation) later captures.
 - *CTO acceptance criteria:* Confirmed rollback is executed only per a Policy Engine determination and is not a hardcoded Deployment Agent behavior, per Architecture Specification §9 and Execution Specification §5.
 - *Excluded work:* The rollback determination itself (WP-05, Policy Engine's responsibility); WP-11 Integration (rollback-outcome verification wiring — that capability depends on this package's own rollback action existing first, see WP-11).
+- *Implementation status:* **Implemented. CTO approved.** Commit `56384f7`. Boundary/interface only — no live rollback-execution adapter exists yet; see WP-14 Design Acceptance, Outstanding Items.
 
 **WP-11 — Trust Model: Reported / Verified Outcome Handling**
 - *Objective:* Implement outcome reporting as Reported, and the independent verification path that determines whether an outcome becomes Verified. This package comprises two internally sequenceable capabilities — a generic verification mechanism (**WP-11 Core**) and its integration into rollback's own outcome reporting (**WP-11 Integration**), per Dependencies and Expected deliverables below. Both remain part of this single work package; this distinction does not create a new work package.
@@ -149,6 +171,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* **WP-11 Core:** an independent verification mechanism that determines Verified status for a Reported outcome, without the Deployment Agent making that determination itself — usable as soon as WP-08/WP-09 exist. **WP-11 Integration:** wiring that same mechanism into rollback's own outcome reporting once WP-10 exists, completing outcome reporting and verification for every execution and rollback action.
 - *CTO acceptance criteria:* Confirmed the Deployment Agent only reports outcomes as Reported and does not itself assign Verified status, per Architecture Specification §8; confirmed no additional trust state beyond Reported and Verified is introduced; confirmed WP-11 Core is usable by WP-10's verification-failure rollback question (per ADR-011) without requiring WP-11 Integration to be complete.
 - *Excluded work:* Any trust state beyond Reported and Verified.
+- *Implementation status:* **Implemented. CTO approved.** WP-11 Core: commit `309e858`. WP-11 Integration: commit `63ce1aa`. Boundary/interface only — no live verification mechanism exists yet; see WP-14 Design Acceptance, Outstanding Items.
 
 **WP-03 — Audit Trail Foundation**
 - *Objective:* Implement audit trail recording covering every decision point and action established by WP-02 and WP-04 through WP-11.
@@ -157,6 +180,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* Audit trail entries recorded for every decision point and action produced across the flow — classification, approval request and decision, automatic execution, manual-approval execution, rollback, and outcome reporting.
 - *CTO acceptance criteria:* Confirmed the audit trail is described and structured as a platform-level requirement, not an application feature, per the approved Architecture Specification's framing; confirmed it captures every decision point and action from WP-02 and WP-04 through WP-11 with no gaps.
 - *Excluded work:* Any decision point or action not already established by WP-02 or WP-04 through WP-11.
+- *Implementation status:* **Implemented. CTO approved.** Initial: commit `f197e0d`. Corrective (distinct events, failure-safe recording): commit `59c8d53`. Boundary/interface only — no live persistence adapter exists yet; audit recording is documented as best-effort and passive by design (see WP-14 Design Acceptance, Outstanding Items).
 
 **WP-12 — Integration**
 - *Objective:* Integrate WP-00, WP-01, WP-02, WP-04 through WP-11, and WP-03 into the single deployment flow described in Architecture Specification §7.
@@ -165,6 +189,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* A single integrated instance of the deployment flow covering both the low-risk automatic path and the high-risk Founder-approval path, including a rollback case, both a Reported and a Verified outcome, and audit trail entries across the whole flow.
 - *CTO acceptance criteria:* Confirmed the integrated flow matches Architecture Specification §7 step-for-step, with no deviation, omission, or addition.
 - *Excluded work:* Validation of the integrated flow against MVP Completion Criteria (WP-13); formal acceptance (WP-14).
+- *Implementation status:* **Implemented. CTO approved. Founder approved.** The initial integration (commit `3c83b61`) surfaced a follow-on architectural question — see ADR-013 (Deployment Lifecycle Outcome Represents Complete Lifecycle) — resolved through WP-12A (plan, approved), WP-12B (first implementation, commit `026c20a`, superseded), and WP-12C (final implementation, commit `4be8eb4`, approved). **WP-12C is the final implementation of this work package; commit `4be8eb4` is WP-12's final implementation commit.**
 
 **WP-13 — System Validation**
 - *Objective:* Validate the integrated flow from WP-12 against every MVP Completion Criterion (Section 8).
@@ -173,6 +198,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* Validation evidence demonstrating that each criterion in Section 8 is met by the integrated flow.
 - *CTO acceptance criteria:* Confirmed each Section 8 criterion has CTO Verification (Section 7) evidence; no criterion left Developer-Evidence-only.
 - *Excluded work:* Any new functionality or scope beyond what WP-00 through WP-12 already deliver — this package validates, it does not build.
+- *Implementation status:* **Complete. CTO approved.** Validation record: `WP-13-System-Validation.md`, confirming eight of nine Section 8 criteria satisfied with direct repository evidence (the remaining two — all-WPs-APPROVED, WP-14 issued — were, correctly, pending only on this document and WP-14 itself). Two non-functional findings from this validation (CI not running the test suite; stale documentation pointers) were closed in WP-13A, commit `a26c410`.
 
 **WP-14 — MVP Acceptance**
 - *Objective:* Formal CTO acceptance of the Kyron7 Deployment Agent MVP as complete, per Section 8.
@@ -181,6 +207,7 @@ No files or the repository itself are created by this document.
 - *Expected deliverables:* A formal MVP Acceptance record confirming all Section 8 criteria are met.
 - *CTO acceptance criteria:* CTO issues MVP Acceptance only once WP-13's validation evidence confirms every Section 8 criterion.
 - *Excluded work:* Any implementation, deployment, or scope addition — this package is a governance sign-off stage only.
+- *Implementation status:* **Redefined and completed as Design Acceptance, not the originally-planned undifferentiated "MVP Acceptance."** All prior evidence in this project (Founder Acceptance Dossier, WP-13 validation) was gathered exclusively against test doubles, never a live external system — see `WP-14-Design-Acceptance.md` for the full record and rationale. That document certifies "Kyron7 Deployment Agent MVP — Design Complete" and explicitly withholds any "Production Ready" claim. A separate, future Production Acceptance decision is deferred to the Operationalization phase, entered via `Pilot-Deployment-Validation-Plan.md`. No Section 8 criterion is weakened by this redefinition — all nine remain the standard for Design Acceptance; "Production Ready" was never one of them.
 
 ## 6. Review Gates
 
