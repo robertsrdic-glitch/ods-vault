@@ -39,3 +39,7 @@ Execute the Pilot Deployment Validation Plan and reach its documented exit crite
 - `WP-14-Design-Acceptance.md` and `Pilot-Deployment-Validation-Plan.md`: filed as new documents, previously existing only as drafts.
 
 One item was found but left untouched as out of this closure's scope: `Repository-Reconciliation-Report.md` (an Architecture-area document, not a Work Package or the Implementation Plan) also carries a stale "Draft — Pending CTO Review" header. It predates this work-package sequence and feeds ADR-005 rather than being governed by it — flagged for a future pass, not corrected here.
+
+## Post-Closure Governance Correction
+
+A later audit found this report's Total ADRs claim above ("all Accepted/Approved") did not match `ADR-006-Technology-Stack-Selection.md` and `ADR-007-Deployment-Risk-Classification-Rules.md`, both of which still carried `Status: Proposed`. Resolved 2026-07-19 via explicit Founder approval — both ADRs are now `Status: Accepted` with a recorded `Approved:` date. The Total ADRs line is accurate as of that approval.

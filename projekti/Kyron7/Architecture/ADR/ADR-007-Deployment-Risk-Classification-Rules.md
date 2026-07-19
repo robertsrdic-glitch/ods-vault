@@ -1,7 +1,8 @@
 # ADR-007: Deployment Risk Classification Rules
 
-**Status:** Proposed
+**Status:** Accepted
 **Date:** 2026-07-18
+**Approved:** 2026-07-19 (Founder)
 
 ## Context
 

@@ -26,8 +26,8 @@ Central entry point into the Kyron7 Deployment Agent knowledge base. Links to ev
 - [[ADR-003-ai-engineering-workflow-v2|ADR-003 — AI Engineering Workflow v2]]
 - [[ADR-004-kyron7-deployment-agent-priority|ADR-004 — Kyron7 Deployment Agent Priority]]
 - [[ADR-005-fresh-repository-baseline|ADR-005 — Fresh Repository Baseline]]
-- [[ADR-006-Technology-Stack-Selection|ADR-006 — Technology Stack Selection]] — **Proposed, not yet Approved** (see [[Kyron7 Project Health|Project Health]])
-- [[ADR-007-Deployment-Risk-Classification-Rules|ADR-007 — Deployment Risk Classification Rules]] — **Proposed, not yet Approved** (see [[Kyron7 Project Health|Project Health]])
+- [[ADR-006-Technology-Stack-Selection|ADR-006 — Technology Stack Selection]]
+- [[ADR-007-Deployment-Risk-Classification-Rules|ADR-007 — Deployment Risk Classification Rules]]
 - [[ADR-008-MVP-Deployment-Execution-Outcome|ADR-008 — MVP Deployment Execution Outcome]]
 - [[ADR-009-MVP-High-Risk-Deployment-Outcome|ADR-009 — MVP High-Risk Deployment Outcome]]
 - [[ADR-010-Deployment-Agent-Owns-Lifecycle-Policy-Engine-Owns-Policies|ADR-010 — Deployment Agent Owns Lifecycle, Policy Engine Owns Policies]]
