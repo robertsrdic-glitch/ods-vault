@@ -17,7 +17,7 @@ Central entry point into the Kyron7 Deployment Agent knowledge base. Links to ev
 - [[Deployment-Agent-MVP-Architecture-Specification|Deployment Agent MVP — Architecture Specification]]
 - [[Deployment-Execution-Engine-Specification|Deployment Execution Engine Specification]]
 - [[Deployment-Policy-Engine-Specification|Deployment Policy Engine Specification]]
-- [[Repository-Reconciliation-Report|Repository Reconciliation Report]] — Draft, pending CTO review (see [[Kyron7 Project Health|Project Health]])
+- [[Repository-Reconciliation-Report|Repository Reconciliation Report]] — Superseded by ADR-005; findings retained as historical record
 
 ### Architecture Decision Records (ADR-001 – ADR-013)
 
