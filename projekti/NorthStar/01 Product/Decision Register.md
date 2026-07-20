@@ -1,6 +1,6 @@
 Title: NorthStar Decision Register
-Version: 0.3
-Status: Approved
+Version: 0.4
+Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
 Founder: Robert
 Product: NorthStar
 Decision date: 2026-07-20
@@ -243,6 +243,55 @@ Tehnična ponovna uporaba (shared capability) ne zmanjšuje statusa teh dveh pro
 - Samostojen produkt opisuje produktno in UX raven — lastno primarno vstopno točko in samostojen uporabniški namen.
 
 Ta odločitev nadomešča prejšnjo formulacijo v [[#DR-011 — Arhitektura Affordability|DR-011]] in [[#DR-012 — Arhitektura Financial Terms|DR-012]], da Affordability in Financial Terms nista samostojna produktna modula.
+
+---
+
+## DR-014 — Release struktura prve faze
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:** NorthStar prva faza vsebuje vse štiri samostojne produkte, vendar prvi javni MVP release ne vključuje vseh štirih v enaki globini.
+
+### Prvi javni MVP release
+
+V prvi javni MVP release vstopijo:
+
+1. **Koliko kredita si lahko privoščim**
+   - jedrni produkt prvega releasea;
+
+2. **Pojasni pojme**
+   - jedrni produkt prvega releasea;
+
+3. **Stanovanjski kredit**
+   - omejena začetna različica;
+   - brez PDF Offer Explanation oziroma bančne PDF analize;
+   - njegov končni feature scope mora biti določen v MVP dokumentu.
+
+### Naslednji release znotraj prve faze
+
+4. **Leasing**
+   - ostane samostojen produkt prve faze;
+   - ni del prvega javnega MVP releasea;
+   - vstopi v naslednji release znotraj prve faze;
+   - pred implementacijo potrebuje podrobno Leasing specifikacijo;
+   - stanje Leasing kartice v prvem javnem MVP releaseu je določeno v naslednjem podrazdelku.
+
+### Leasing card state in the first public MVP release
+
+- Leasing ostaja eden od štirih produktov na prvem zaslonu.
+- V prvem javnem MVP releaseu njegova kartica še ne odpira produkta.
+- Oznaka `Kmalu` mora biti vidna.
+- Kartica mora biti vizualno in vedenjsko jasno neaktivna.
+- Uporabnik mora razumeti, da produkt prihaja pozneje.
+- To ni odstranitev Leasinga iz prve faze.
+
+### Pojasnilo
+
+- `Prva faza` je širši produktni okvir.
+- `Prvi javni MVP release` je prvi dejansko objavljeni podnabor te faze.
+- Prva faza lahko vsebuje več zaporednih releaseov.
+- Odložitev Leasinga v naslednji release ne zmanjšuje njegovega statusa samostojnega produkta prve faze.
+- PDF Offer Explanation ostaja izključen skladno z [[#DR-002 — Razlaga bančne ponudbe in PDF flow|DR-002]].
 
 ---
 
