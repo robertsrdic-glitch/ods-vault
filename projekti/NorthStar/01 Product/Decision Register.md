@@ -1,6 +1,6 @@
 Title: NorthStar Decision Register
-Version: 0.5
-Status: Approved
+Version: 0.6
+Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
 Founder: Robert
 Product: NorthStar
 Decision date: 2026-07-20
@@ -258,6 +258,7 @@ V prvi javni MVP release vstopijo:
 
 1. **Koliko kredita si lahko privoščim**
    - jedrni produkt prvega releasea;
+   - MVP scope produkta je določen v [[#DR-016 — MVP scope produkta Koliko kredita si lahko privoščim|DR-016]].
 
 2. **Pojasni pojme**
    - jedrni produkt prvega releasea;
@@ -340,6 +341,88 @@ V prvi javni MVP release vstopijo:
 - Monthly Payment Examples morajo biti jasno označeni kot izobraževalni in približni.
 - Ne smejo ustvarjati vtisa bančne ponudbe, jamstva ali osebnega finančnega svetovanja.
 - PDF analiza in Ask AI nista del tega releasea.
+
+---
+
+## DR-016 — MVP scope produkta Koliko kredita si lahko privoščim
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:** Produkt **Koliko kredita si lahko privoščim** je jedrni produkt prvega javnega MVP releasea in uporabniku poda previdno, razumljivo oceno varnega mesečnega obroka ter okvirnega razpona kredita.
+
+### Uporabniški vnosi
+
+Potrjeni vnosi:
+
+- mesečni neto prihodek gospodinjstva;
+- velikost gospodinjstva;
+- obstoječi krediti, leasingi in druge redne mesečne pogodbene obveznosti;
+- mesečni življenjski stroški;
+- želeni oziroma največji rok kredita;
+- okvirna obrestna mera ali jasno prikazan privzeti izobraževalni primer.
+
+### Ocena življenjskih stroškov
+
+- NorthStar predlaga varno minimalno oceno glede na velikost gospodinjstva.
+- Uporabnik jo lahko popravi.
+- Predlog in uporabljene predpostavke morajo biti jasno prikazani.
+- Ta odločitev ne določa še konkretnih številčnih pragov ali državne metodologije.
+- Konkretna metodologija zahteva ločeno specifikacijo in validacijo.
+
+### Redne mesečne obveznosti
+
+Vključujejo najmanj:
+
+- obstoječe kreditne obroke;
+- leasing obroke;
+- relevantna mesečna bremena kartic ali limitov;
+- preživnine;
+- druge pogodbene mesečne dolgove ali obveznosti.
+
+Priporočena jasna uporabniška oznaka:
+
+`Obstoječi krediti, leasingi in druge redne mesečne obveznosti`
+
+### Rezultat
+
+- Varen razpon mesečnega obroka.
+- Okviren razpon možne vrednosti kredita.
+- Preostanek denarja po obroku, življenjskih stroških in drugih obveznostih.
+- Razumljiva ocena: bolj varno, napeto, previsoko tveganje.
+- Prikaz ključnih predpostavk.
+
+Rezultat je razpon; en sam navidezno natančen znesek ni dovoljen kot glavni rezultat.
+
+### Trust omejitve
+
+- Rezultat ni bančna odobritev.
+- Ni uradna presoja kreditne sposobnosti.
+- Ni osebno finančno svetovanje.
+- Ne napoveduje odobritve posamezne banke.
+- Mora razkriti uporabljeno obrestno mero, rok, stroške, obveznosti in varnostno rezervo.
+
+### Izključeno
+
+- Povezovanje z bankami.
+- Dejansko preverjanje kreditne sposobnosti.
+- Avtomatski uvoz bančnih podatkov.
+- Uporabniški račun.
+- Shranjevanje izračunov.
+- AI klepet.
+- Priporočanje konkretne banke ali kredita.
+- Napoved odobritve.
+
+### Odprta izvedbena vprašanja
+
+Še niso določeni:
+
+- konkretna formula;
+- konkretni varnostni pragovi;
+- konkretna minimalna ocena življenjskih stroškov;
+- državna lokalizacija metodologije;
+- validacijski in testni podatki.
+
+Ta vprašanja zahtevajo ločeno specifikacijo in ne smejo biti določena v Decision Registerju brez dodatne presoje.
 
 ---
 
