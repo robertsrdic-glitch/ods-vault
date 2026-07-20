@@ -393,6 +393,35 @@ Priporočena jasna uporabniška oznaka:
 
 Rezultat je razpon; en sam navidezno natančen znesek ni dovoljen kot glavni rezultat.
 
+### Obvezni vizualni prikaz rezultata
+
+- MVP mora poleg številčnega rezultata vključevati preprost in razumljiv vizualni graf.
+- Graf ni nova metodologija ali ločen izračun, ampak vizualni prikaz istega potrjenega rezultata.
+- Prikazati mora najmanj:
+  - varen razpon mesečnega obroka;
+  - uporabnikov izbrani ali preizkušeni mesečni obrok;
+  - mejo oziroma območje, kjer rezultat postane napet;
+  - območje previsokega tveganja.
+- Uporabnik mora iz grafa takoj razumeti, kam se njegov izbrani obrok uvršča.
+- Vizualizacija mora jasno razlikovati med: bolj varno, napeto, previsoko tveganje.
+- Graf ne sme ustvarjati vtisa matematične ali bančne gotovosti.
+
+Drugi obvezni vizualni prikaz oziroma del istega rezultata — razporeditev mesečnega denarja, ki pokaže:
+
+- mesečni neto prihodek gospodinjstva;
+- življenjske stroške;
+- obstoječe kredite, leasinge in druge obveznosti;
+- predvideni novi mesečni obrok;
+- preostanek oziroma varnostno rezervo.
+
+Vizualizacija mora ostati zelo preprosta:
+
+- brez kompleksnih krivulj, finančnega žargona ali preveč podatkov;
+- namen je razumevanje, ne dekoracija;
+- graf mora biti razumljiv uporabniku brez finančnega znanja;
+- natančna oblika grafa, barve, pragovi in interakcije še niso določeni;
+- te podrobnosti zahtevajo ločeno UX in metodološko specifikacijo.
+
 ### Trust omejitve
 
 - Rezultat ni bančna odobritev.
