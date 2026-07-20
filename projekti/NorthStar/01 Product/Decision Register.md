@@ -1,0 +1,221 @@
+Title: NorthStar Decision Register
+Version: 0.1
+Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
+Founder: Robert
+Product: NorthStar
+Decision date: 2026-07-20
+Last updated: 2026-07-20
+
+---
+
+# NorthStar Decision Register
+
+## DR-001 — Prvi zaslon prve faze
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:** NorthStar uporablja vizualno osnovo **Concept A**.
+
+Prvi zaslon ima štiri primarne vstopne točke:
+
+1. **Stanovanjski kredit**
+2. **Leasing**
+3. **Koliko kredita si lahko privoščim**
+4. **Pojasni pojme**
+
+**Utemeljitev:** Concept A je bil izbran kot uradna osnova. Poznejša vsebinska struktura v2 je bila izrecno naročena in jo je Founder ponovno potrdil kot zadnjo veljavno osnovo prve faze.
+
+---
+
+## DR-002 — Razlaga bančne ponudbe in PDF flow
+
+**Status:** FOUNDER APPROVED / SUPERSEDED
+
+**Odločitev:** Kartica **Razloži ponudbo banke** ni del prvega zaslona in ni del prve faze.
+
+**Zgodovina:**
+
+- V starejši verziji Concept A v1 je bila kartica prisotna.
+- V Concept A v2 je bila odstranjena.
+- Nadomestila jo je kartica **Pojasni pojme**.
+- Founder je to strukturo ponovno potrdil kot zadnjo veljavno osnovo.
+
+**Odprto za prihodnost:** Ta odločitev ne pomeni avtomatske trajne ukinitve PDF razlage. Njen morebitni status v poznejši fazi še ni določen.
+
+---
+
+## DR-003 — Affordability
+
+**Status:** FOUNDER APPROVED na UX ravni
+
+**Odločitev:** **Koliko kredita si lahko privoščim** je samostojna primarna vstopna točka prvega zaslona.
+
+Predvideni namen:
+
+> Uporabniku pomaga oceniti varen mesečni obrok glede na njegove prihodke in finančne obveznosti.
+
+**Še ni odločeno:**
+
+- ali je tehnično samostojen modul,
+- shared capability,
+- ali funkcija znotraj Housing Loans.
+
+Samostojna kartica ne pomeni avtomatsko samostojnega tehničnega modula.
+
+---
+
+## DR-004 — Financial Terms
+
+**Status:** FOUNDER APPROVED na UX ravni
+
+**Odločitev:** **Pojasni pojme** je samostojna primarna vstopna točka prvega zaslona.
+
+Predvideni namen:
+
+> Preproste razlage finančnih pojmov brez žargona.
+
+**Superseded:** Starejša kartica **Razloži ponudbo banke** je bila na prvem zaslonu nadomeščena s to vstopno točko.
+
+**Še ni odločeno:**
+
+- ali je Financial Terms samostojen modul,
+- shared educational capability,
+- ali vsebinska plast, ki jo uporabljajo tudi drugi moduli.
+
+---
+
+## DR-005 — Design okolje
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:**
+
+- Figma je bila opuščena.
+- Dejanski NorthStar design je bil izdelan v Claude Designu.
+- Figma ni avtoritativni vir veljavnega designa.
+
+**Avtoritativni design dokazi:**
+
+1. Founder potrjene odločitve,
+2. izvorne Claude Design HTML datoteke,
+3. zaslonski posnetki potrjenih verzij,
+4. design-review dokumenti v ODS.
+
+---
+
+## DR-006 — Visual design foundation
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:** Concept A ostaja vizualna osnova prvega zaslona.
+
+Potrjene značilnosti:
+
+- zelo čist in miren videz,
+- močna tipografska hierarhija,
+- veliko praznega prostora,
+- brez nepotrebne vizualne kompleksnosti,
+- jasen enostopenjski izbor začetne poti,
+- zaupanje in razumljivost pred dekoracijo.
+
+---
+
+## DR-007 — Calm Intelligence
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:** Med tremi predstavljenimi brand smermi je bila izbrana:
+
+**1a — Calm Intelligence**
+
+Zavrnjeni kot primarni smeri:
+
+- Human Finance,
+- Premium Guidance.
+
+Calm Intelligence mora podpirati Concept A, ne pa ga nadomestiti z novim redesignom.
+
+---
+
+## DR-008 — Direction A+ elementi
+
+**Status:** PROPOSED ONLY
+
+Naslednji elementi so bili predlagani, vendar še niso potrjeni kot celota:
+
+- Northlight barva,
+- Certainty Arc,
+- sharp-corner rule,
+- poseben prikaz decimalnih mest,
+- linearni loading indikator,
+- underline confirmation feedback.
+
+Ti elementi se ne smejo vključiti v uradni design system brez ločene Founder odločitve in tehnične presoje.
+
+Posebej je Certainty Arc odprt zaradi vprašanja, ali lahko NorthStar zanesljivo in razumljivo prikazuje dejansko stopnjo AI gotovosti.
+
+---
+
+## DR-009 — Razmerje med Product Home in Housing Loan Upload
+
+**Status:** VERIFIED
+
+**Odločitev:** Product Home in Housing Loan Upload Screen 1 nista isti zaslon.
+
+- **Product Home** je splošni prvi zaslon s štirimi primarnimi vstopnimi točkami.
+- **Housing Loan Upload Screen 1** je bil ločen zgodovinski design flow za PDF razlago.
+
+Ker PDF flow ni del prve faze, Housing Loan Upload screen trenutno ni del aktivnega first-phase design scopea.
+
+---
+
+## DR-010 — Avtoritativnost zgodovinskih dokumentov
+
+**Status:** FOUNDER APPROVED PRINCIPLE
+
+**Odločitev:** Starejši dokument ali design ne predstavlja avtomatsko veljavnega stanja.
+
+Pri vsaki temi se uporablja naslednja hierarhija:
+
+1. zadnja neposredna Founder odločitev,
+2. poznejša dokumentirana sprememba,
+3. starejša potrjena odločitev,
+4. zgodnji predlog ali ideja.
+
+Kjer zadnje stanje ni dokazljivo, mora dokumentacija uporabljati oznako:
+
+**REQUIRES FOUNDER DECISION**
+
+---
+
+# Open Questions
+
+## OQ-001 — Arhitektura Affordability
+
+Treba je še odločiti, ali je Affordability:
+
+- samostojen produktni modul,
+- shared capability,
+- ali funkcija Housing Loans z ločenim vstopom na domači strani.
+
+## OQ-002 — Arhitektura Financial Terms
+
+Treba je še odločiti, ali je Financial Terms:
+
+- samostojen modul,
+- shared educational capability,
+- ali skupna vsebinska plast znotraj drugih modulov.
+
+---
+
+## Reference / Evidence
+
+- [[Housing Loans Specification]] — `01 Product/Housing Loans Specification.md`
+- [[User Journey Specification]] — `01 Product/User Journey Specification.md`
+- [[User Flow Specification]] — `01 Product/User Flow Specification.md`
+- [[Features]] — `01 Product/Features.md`
+- [[Design Bible]] — `02 Design/Design Bible.md`
+- Design Decisions — `04 Design Deliverables/Reviews/Design Decisions.md`
+- Recommendation — `04 Design Deliverables/Reviews/Recommendation.md`
+- Self Critique — `04 Design Deliverables/Reviews/Self Critique.md`
+- Session Summary — `04 Design Deliverables/Archive/Session Summary.md`
