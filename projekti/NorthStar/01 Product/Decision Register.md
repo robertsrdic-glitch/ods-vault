@@ -1,6 +1,6 @@
 Title: NorthStar Decision Register
-Version: 0.4
-Status: Approved
+Version: 0.5
+Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
 Founder: Robert
 Product: NorthStar
 Decision date: 2026-07-20
@@ -265,7 +265,7 @@ V prvi javni MVP release vstopijo:
 3. **Stanovanjski kredit**
    - omejena začetna različica;
    - brez PDF Offer Explanation oziroma bančne PDF analize;
-   - njegov končni feature scope mora biti določen v MVP dokumentu.
+   - njegov omejeni feature scope za prvi javni MVP release je določen v [[#DR-015 — Omejeni scope Stanovanjskega kredita v prvem javnem MVP releaseu|DR-015]] in ga mora MVP dokument povzeti.
 
 ### Naslednji release znotraj prve faze
 
@@ -292,6 +292,54 @@ V prvi javni MVP release vstopijo:
 - Prva faza lahko vsebuje več zaporednih releaseov.
 - Odložitev Leasinga v naslednji release ne zmanjšuje njegovega statusa samostojnega produkta prve faze.
 - PDF Offer Explanation ostaja izključen skladno z [[#DR-002 — Razlaga bančne ponudbe in PDF flow|DR-002]].
+
+---
+
+## DR-015 — Omejeni scope Stanovanjskega kredita v prvem javnem MVP releaseu
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:** Produkt **Stanovanjski kredit** je v prvem javnem MVP releaseu prisoten kot omejena začetna različica.
+
+### Vključeno
+
+1. **Learn**
+   - kratke, strukturirane in razumljive vsebine o osnovah stanovanjskega kredita;
+
+2. **Monthly Payment Examples**
+   - preprosti izobraževalni primeri mesečnega obroka;
+   - rezultati so približni;
+   - ne predstavljajo bančnega izračuna, ponudbe ali finančnega svetovanja;
+
+3. povezava na samostojni produkt **Koliko kredita si lahko privoščim**;
+
+4. povezava na samostojni produkt **Pojasni pojme**.
+
+### Izključeno iz prvega javnega MVP releasea
+
+- Ask AI;
+- PDF Offer Explanation;
+- primerjava več ponudb;
+- personalizirano učenje;
+- priprava na sestanek z banko;
+- napredne simulacije;
+- uporabniški račun;
+- shranjena zgodovina.
+
+### Arhitekturna in produktna meja
+
+- Stanovanjski kredit ne podvaja Affordability ali Financial Terms funkcionalnosti.
+- Uporabnika usmeri na samostojna produkta:
+  - **Koliko kredita si lahko privoščim**
+  - **Pojasni pojme**
+- Shared capabilities lahko obstajajo v ozadju, vendar produktni UX ostaja ločen.
+- Ta odločitev določa samo prvi javni MVP release in ne predstavlja prihodnjega Roadmapa.
+
+### Trust omejitve
+
+- Monthly Payment Examples morajo biti jasno označeni kot izobraževalni in približni.
+- Ne smejo ustvarjati vtisa bančne ponudbe, jamstva ali osebnega finančnega svetovanja.
+- PDF analiza in Ask AI nista del tega releasea.
 
 ---
 
