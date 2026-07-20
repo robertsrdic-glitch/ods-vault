@@ -1,6 +1,6 @@
 Title: NorthStar Decision Register
 Version: 0.5
-Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
+Status: Approved
 Founder: Robert
 Product: NorthStar
 Decision date: 2026-07-20
