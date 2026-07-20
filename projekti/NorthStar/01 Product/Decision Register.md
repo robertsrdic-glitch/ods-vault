@@ -1,6 +1,6 @@
 Title: NorthStar Decision Register
-Version: 0.6
-Status: Approved
+Version: 0.7
+Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
 Founder: Robert
 Product: NorthStar
 Decision date: 2026-07-20
@@ -262,6 +262,7 @@ V prvi javni MVP release vstopijo:
 
 2. **Pojasni pojme**
    - jedrni produkt prvega releasea;
+   - MVP scope in country content model produkta sta določena v [[#DR-017 — MVP scope in country content model produkta Pojasni pojme|DR-017]].
 
 3. **Stanovanjski kredit**
    - omejena začetna različica;
@@ -452,6 +453,134 @@ Vizualizacija mora ostati zelo preprosta:
 - validacijski in testni podatki.
 
 Ta vprašanja zahtevajo ločeno specifikacijo in ne smejo biti določena v Decision Registerju brez dodatne presoje.
+
+---
+
+## DR-017 — MVP scope in country content model produkta Pojasni pojme
+
+**Status:** FOUNDER APPROVED
+
+**Odločitev:** Produkt **Pojasni pojme** je jedrni produkt prvega javnega MVP releasea in uporabniku ponuja kurirane, lokalizirane ter razumljive razlage najpomembnejših finančnih pojmov brez žargona.
+
+### Prvi javni MVP release
+
+- prvi MVP podpira samo Slovenijo;
+- uporablja `Slovenia Country Content Pack`;
+- vsebuje približno 30–50 najpomembnejših finančnih pojmov;
+- natančen seznam pojmov še ni določen;
+- druge države niso del prvega javnega MVP releasea.
+
+### Osnovna funkcionalnost
+
+- iskalno polje;
+- preproste kategorije;
+- dostop do posamezne razlage;
+- povezave med sorodnimi pojmi.
+
+### Struktura posamezne razlage
+
+Vsaka razlaga mora vsebovati najmanj:
+
+1. kratko razlago v preprostem jeziku;
+2. konkreten primer;
+3. pojasnilo, zakaj je pojem pomemben;
+4. povezane pojme.
+
+### Country Content Pack model
+
+- vsebine so organizirane po državnih paketih;
+- vsak country pack vsebuje lokalizirane in preverjene vsebine za posamezno državo;
+- nekateri pojmi imajo splošno osnovo, vendar imajo lahko državne pravne, regulativne, davčne, bančne ali potrošniške posebnosti;
+- vsebin za novo državo ni dovoljeno ustvariti samo z avtomatskim prevodom obstoječega paketa;
+- vsak prihodnji country pack zahteva lokalno raziskavo, lokalizacijo, preverjanje in odobritev;
+- sistemska arhitektura mora omogočati prihodnje country packe, vendar to ne širi trenutnega MVP scopea.
+
+### Vloga AI
+
+AI lahko pomaga pri:
+
+- raziskovanju;
+- iskanju in primerjavi uradnih oziroma avtoritativnih virov;
+- pripravi osnutkov;
+- poenostavitvi razlage;
+- pripravi primerov;
+- zaznavanju možnih lokalnih posebnosti.
+
+AI ne sme:
+
+- samodejno objaviti vsebine;
+- sam potrditi pravne ali finančne pravilnosti;
+- nadomestiti uredniškega pregleda;
+- ustvarjati sprotnih generativnih razlag uporabnikom v MVP produktu.
+
+### Source and validation principle
+
+Prednost imajo primarni, uradni in avtoritativni viri.
+
+Za vsak lokaliziran pojem mora prihodnja vsebinska specifikacija predvideti najmanj:
+
+- canonical concept ID;
+- country pack;
+- jezik;
+- lokalno ime pojma;
+- kratko razlago;
+- primer;
+- zakaj je pojem pomemben;
+- povezane pojme;
+- vire;
+- datum zadnje validacije;
+- review oziroma approval status.
+
+Ta odločitev ne določa še tehnične podatkovne sheme ali implementacijskega formata.
+
+### Publishing meja
+
+Vsebina se lahko objavi šele po:
+
+1. raziskavi;
+2. evidentiranju virov;
+3. preverjanju virov;
+4. vsebinskem oziroma uredniškem pregledu;
+5. odobritvi;
+6. evidentiranju datuma zadnje validacije.
+
+Avtomatski AI publishing ni del MVP-ja.
+
+### Shared capability meja
+
+- ista zbirka pojmov se lahko uporablja znotraj produkta Stanovanjski kredit;
+- shared Financial Terms capability lahko podpira več produktov;
+- Pojasni pojme ostaja samostojen produkt z lastno primarno UX-vstopno točko;
+- tehnična ponovna uporaba ne zmanjšuje njegovega produktnega statusa.
+
+### Izključeno iz prvega javnega MVP releasea
+
+- AI klepet;
+- avtomatsko generiranje odgovorov ali razlag za uporabnika;
+- avtomatska objava AI vsebin;
+- uporabniški račun;
+- shranjevanje priljubljenih pojmov;
+- personalizirane razlage;
+- uporabniško ustvarjene vsebine;
+- country packi zunaj Slovenije;
+- avtomatsko prevajanje kot nadomestilo za lokalno raziskavo in validacijo.
+
+### Odprta izvedbena vprašanja
+
+Še niso določeni:
+
+- natančen seznam začetnih 30–50 pojmov;
+- konkretne kategorije;
+- kriteriji za prioritizacijo pojmov;
+- natančni uradni viri za posamezni pojem;
+- uredniški in review proces;
+- odgovornost za končno odobritev vsebine;
+- natančen UX iskanja in navigacije;
+- tehnični format country packa;
+- accessibility zahteve;
+- način rednega ponovnega preverjanja zastarelih vsebin.
+
+Ta vprašanja zahtevajo ločeno vsebinsko, uredniško, UX in tehnično specifikacijo.
 
 ---
 
