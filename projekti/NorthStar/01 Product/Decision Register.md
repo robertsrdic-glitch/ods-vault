@@ -1,6 +1,6 @@
 Title: NorthStar Decision Register
-Version: 0.2
-Status: Approved
+Version: 0.3
+Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
 Founder: Robert
 Product: NorthStar
 Decision date: 2026-07-20
@@ -54,9 +54,9 @@ Predvideni namen:
 
 > Uporabniku pomaga oceniti varen mesečni obrok glede na njegove prihodke in finančne obveznosti.
 
-**Arhitekturni status:** Razrešen z [[#DR-011 — Arhitektura Affordability|DR-011]].
+**Arhitekturni status:** Razrešen z [[#DR-011 — Arhitektura Affordability|DR-011]] in [[#DR-013 — Samostojni produkti prve faze in shared capabilities|DR-013]].
 
-Affordability je shared capability z ločeno primarno UX-vstopno točko in ni samostojen produktni modul.
+**Koliko kredita si lahko privoščim** je samostojen produkt prve faze, ki ga podpira shared Affordability capability.
 
 ---
 
@@ -72,9 +72,9 @@ Predvideni namen:
 
 **Superseded:** Starejša kartica **Razloži ponudbo banke** je bila na prvem zaslonu nadomeščena s to vstopno točko.
 
-**Arhitekturni status:** Razrešen z [[#DR-012 — Arhitektura Financial Terms|DR-012]].
+**Arhitekturni status:** Razrešen z [[#DR-012 — Arhitektura Financial Terms|DR-012]] in [[#DR-013 — Samostojni produkti prve faze in shared capabilities|DR-013]].
 
-Financial Terms je shared educational capability z ločeno primarno UX-vstopno točko in ni samostojen produktni modul.
+**Pojasni pojme** je samostojen produkt prve faze, ki ga podpira shared Financial Terms capability.
 
 ---
 
@@ -184,38 +184,65 @@ Kjer zadnje stanje ni dokazljivo, mora dokumentacija uporabljati oznako:
 
 ## DR-011 — Arhitektura Affordability
 
-**Status:** FOUNDER APPROVED
+**Status:** FOUNDER APPROVED — CLARIFIED BY DR-013
 
-**Odločitev:** Affordability je shared capability z ločeno primarno UX-vstopno točko na domačem zaslonu.
+**Odločitev:** Affordability je skupna arhitekturna capability, ki podpira samostojni produkt prve faze **Koliko kredita si lahko privoščim**.
 
-Affordability ni samostojen produktni modul.
+Produkt **Koliko kredita si lahko privoščim** ima lastno primarno UX-vstopno točko in samostojen uporabniški namen.
 
-Capability lahko uporablja več produktnih modulov:
+Isto affordability logiko lahko uporabljajo tudi:
 
-- najprej Housing Loans,
-- pozneje tudi Leasing,
-- po potrebi drugi prihodnji moduli.
+- Stanovanjski kredit,
+- Leasing,
+- drugi prihodnji produkti.
 
-Ločena kartica na domačem zaslonu predstavlja samostojen uporabniški vstop, ne pa samostojne tehnične ali produktne domene.
+Prejšnja formulacija, da Affordability ni samostojen produktni modul, je superseded z [[#DR-013 — Samostojni produkti prve faze in shared capabilities|DR-013]].
 
 ---
 
 ## DR-012 — Arhitektura Financial Terms
 
+**Status:** FOUNDER APPROVED — CLARIFIED BY DR-013
+
+**Odločitev:** Financial Terms je shared educational capability, ki podpira samostojni produkt prve faze **Pojasni pojme**.
+
+Produkt **Pojasni pojme** ima lastno primarno UX-vstopno točko in samostojen uporabniški namen.
+
+Isti enotni vir finančnih izrazov in razlag lahko uporabljajo tudi:
+
+- Stanovanjski kredit,
+- Leasing,
+- drugi prihodnji produkti.
+
+Razlage se ne smejo po nepotrebnem podvajati po posameznih produktih, kadar lahko uporabljajo isti skupni vir.
+
+Prejšnja formulacija, da Financial Terms ni samostojen produktni modul, je superseded z [[#DR-013 — Samostojni produkti prve faze in shared capabilities|DR-013]].
+
+---
+
+## DR-013 — Samostojni produkti prve faze in shared capabilities
+
 **Status:** FOUNDER APPROVED
 
-**Odločitev:** Financial Terms oziroma **Pojasni pojme** je shared educational capability z ločeno primarno UX-vstopno točko na domačem zaslonu.
+**Odločitev:** NorthStar ima v prvi fazi štiri samostojne produkte:
 
-Financial Terms ni samostojen produktni modul.
+1. Stanovanjski kredit
+2. Leasing
+3. Koliko kredita si lahko privoščim
+4. Pojasni pojme
 
-Capability zagotavlja enoten vir finančnih izrazov in razlag, ki ga lahko uporabljajo:
+Produkta **Koliko kredita si lahko privoščim** in **Pojasni pojme** sta na produktni in UX ravni samostojna produkta prve faze, enakovredna Stanovanjskemu kreditu in Leasingu.
 
-- Housing Loans,
-- Leasing,
-- drugi prihodnji produktni moduli,
-- samostojna vstopna točka **Pojasni pojme**.
+Na tehnični ravni lahko oba uporabljata shared capability oziroma skupno logiko, skupne podatkovne modele ali skupne vsebinske vire. Isto shared logiko lahko uporabljajo tudi drugi produkti — najprej Stanovanjski kredit, pozneje Leasing in prihodnji produkti.
 
-Razlage se ne smejo podvajati ločeno znotraj vsakega produkta, kadar lahko uporabljajo isti skupni vir.
+Tehnična ponovna uporaba (shared capability) ne zmanjšuje statusa teh dveh produktov kot samostojnih produktov prve faze.
+
+**Shared capability** in **samostojen produkt** sta ločena pojma:
+
+- Shared capability opisuje tehnično/arhitekturno raven ponovne uporabe logike.
+- Samostojen produkt opisuje produktno in UX raven — lastno primarno vstopno točko in samostojen uporabniški namen.
+
+Ta odločitev nadomešča prejšnjo formulacijo v [[#DR-011 — Arhitektura Affordability|DR-011]] in [[#DR-012 — Arhitektura Financial Terms|DR-012]], da Affordability in Financial Terms nista samostojna produktna modula.
 
 ---
 
@@ -223,15 +250,15 @@ Razlage se ne smejo podvajati ločeno znotraj vsakega produkta, kadar lahko upor
 
 ## OQ-001 — Arhitektura Affordability
 
-**Status:** RESOLVED by DR-011
+**Status:** RESOLVED by DR-011 and DR-013
 
-Affordability je shared capability z ločeno primarno UX-vstopno točko in ni samostojen produktni modul.
+Affordability je shared capability, ki podpira samostojni produkt prve faze **Koliko kredita si lahko privoščim**.
 
 ## OQ-002 — Arhitektura Financial Terms
 
-**Status:** RESOLVED by DR-012
+**Status:** RESOLVED by DR-012 and DR-013
 
-Financial Terms je shared educational capability z ločeno primarno UX-vstopno točko in ni samostojen produktni modul.
+Financial Terms je shared educational capability, ki podpira samostojni produkt prve faze **Pojasni pojme**.
 
 ---
 
