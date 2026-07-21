@@ -1,7 +1,7 @@
 # NorthStar MVP
 
 Version: 0.1
-Status: Draft
+Status: Approved
 Founder: Robert
 Product: NorthStar
 Last updated: 2026-07-20
