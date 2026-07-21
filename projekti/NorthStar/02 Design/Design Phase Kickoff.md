@@ -1,7 +1,7 @@
 # Design Phase Kickoff
 
 Version: 1.0
-Status: Draft
+Status: Approved
 Category: Design
 Owner: Founder
 Related Documents:
