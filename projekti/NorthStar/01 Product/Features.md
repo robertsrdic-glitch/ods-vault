@@ -1,6 +1,6 @@
 # Features
 
-Status: Draft
+Status: Approved
 
 Catalog of NorthStar's four first-phase products, their confirmed product and UX status, the shared capabilities that support them at a technical level, confirmed first-public-MVP scope per DR-014 through DR-017 and approved [[MVP]] v0.1, and historically superseded or unresolved scope.
 
