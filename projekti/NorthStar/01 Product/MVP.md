@@ -227,8 +227,8 @@ Omejena začetna različica v prvem javnem MVP releaseu (DR-015).
 
 **Vključeno:**
 
-- **Learn** — kratke, strukturirane in razumljive vsebine o osnovah stanovanjskega kredita. *(Candidate pending MVP confirmation — glej [[Features]].)*
-- **Monthly Payment Examples** — preprosti izobraževalni primeri mesečnega obroka; rezultati so približni in ne predstavljajo bančnega izračuna, ponudbe ali finančnega svetovanja. *(Candidate pending MVP confirmation — glej [[Features]].)*
+- **Learn** — kratke, strukturirane in razumljive vsebine o osnovah stanovanjskega kredita.
+- **Monthly Payment Examples** — preprosti izobraževalni primeri mesečnega obroka; rezultati so približni in ne predstavljajo bančnega izračuna, ponudbe ali finančnega svetovanja.
 - Povezava na samostojni produkt **Koliko kredita si lahko privoščim**.
 - Povezava na samostojni produkt **Pojasni pojme**.
 
