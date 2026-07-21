@@ -1,6 +1,6 @@
 Title: NorthStar Decision Register
-Version: 0.7
-Status: Approved
+Version: 0.8
+Status: Founder Approved — Pending CTO File Review, Commit, Push and GitHub Verification
 Founder: Robert
 Product: NorthStar
 Decision date: 2026-07-20
@@ -394,6 +394,22 @@ Priporočena jasna uporabniška oznaka:
 
 Rezultat je razpon; en sam navidezno natančen znesek ni dovoljen kot glavni rezultat.
 
+### Dodatna izobraževalna prikaza rezultata
+
+MVP mora poleg potrjenega rezultata vključevati tudi:
+
+- **Affordability ratio** — izobraževalni kazalnik, ki uporabniku pomaga razumeti razmerje med njegovimi finančnimi zmožnostmi, obveznostmi in preizkušenim mesečnim obrokom.
+- **Referenco na bančni stress test** — jasno izobraževalno pojasnilo, da lahko banke preverjajo dostopnost obroka tudi pod manj ugodnimi pogoji.
+
+Za oba prikaza velja:
+
+- ne predstavljata bančne metodologije ali uradne bančne presoje;
+- ne smeta napovedovati odobritve ali zavrnitve;
+- ne smeta uporabljati izmišljenih uradnih pragov, odstotkov ali pravil;
+- natančna formula affordability ratio, njegov števec, imenovalec in interpretacijski razponi še niso določeni;
+- natančna metodologija bank stress-test reference, uporabljeni scenarij in morebitna državna lokalizacija še niso določeni;
+- metodologija zahteva ločeno specifikacijo, preverjene vire in Founder odobritev pred implementacijo.
+
 ### Obvezni vizualni prikaz rezultata
 
 - MVP mora poleg številčnega rezultata vključevati preprost in razumljiv vizualni graf.
@@ -450,7 +466,9 @@ Vizualizacija mora ostati zelo preprosta:
 - konkretni varnostni pragovi;
 - konkretna minimalna ocena življenjskih stroškov;
 - državna lokalizacija metodologije;
-- validacijski in testni podatki.
+- validacijski in testni podatki;
+- konkretna formula in interpretacija affordability ratio;
+- metodologija in preverjeni viri za bančni stress-test prikaz.
 
 Ta vprašanja zahtevajo ločeno specifikacijo in ne smejo biti določena v Decision Registerju brez dodatne presoje.
 
