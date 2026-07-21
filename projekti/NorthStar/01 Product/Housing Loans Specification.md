@@ -5,215 +5,177 @@ Status: Draft
 Category: Product
 Owner: Founder
 Related Documents:
-- [[Product Bible]]
 - [[NorthStar Constitution]]
 - [[NorthStar OS Specification]]
+- [[Product Bible]]
+- [[Decision Register]]
+- [[MVP]]
+- [[Features]]
+- [[Design Bible]]
 
 ---
 
-# Purpose
+## 1. Purpose
 
-The Housing Loans module helps users understand mortgage financing before making one of the biggest financial decisions of their lives.
+Stanovanjski kredit helps users understand housing-loan concepts and the monthly-payment implications of a housing loan before making one of the biggest financial decisions of their lives.
 
-NorthStar educates.
-
-NorthStar explains.
-
-NorthStar does not recommend banks or financial products.
+NorthStar educates. NorthStar explains. NorthStar does not recommend banks or financial products, and does not sell.
 
 The final decision always belongs to the user.
 
 ---
 
-# User Goal
+## 2. Product Role
 
-Users should be able to answer questions such as:
+Stanovanjski kredit is one of NorthStar's four standalone first-phase products (DR-013).
 
-- What type of mortgage is right for me?
-- What does this banking term mean?
-- What will my monthly payment be?
-- What risks should I understand?
-- What questions should I ask my bank?
-- What does this paragraph in my loan offer actually mean?
+The first public MVP release contains Stanovanjski kredit as a limited initial version, per DR-015.
+
+For the full first-phase product structure, see [[Decision Register]]. For current release scope, see [[MVP]]. For the product and feature catalog, see [[Features]].
 
 ---
 
-# Core Experience
+## 3. User Goal
 
-The module should feel like talking to an experienced financial educator.
+Users should be able to better understand, at an educational level:
 
-Not like reading banking documentation.
+- how housing loans work;
+- fixed versus variable interest;
+- interest rate, effective cost, down payment, repayment period, early repayment, and refinancing;
+- how loan amount, interest rate, and repayment period affect an illustrative monthly payment;
+- what questions and assumptions matter before they continue toward a decision.
 
-Users should never feel overwhelmed.
-
-Every explanation should increase confidence.
-
----
-
-# Version 1 Features
-
-## Learn
-
-Educational content covering:
-
-- What is a housing loan?
-- Mortgage process
-- Fixed vs variable interest
-- APR
-- Down payment
-- Loan duration
-- Early repayment
-- Refinancing
+This document does not presume an uploaded offer, paragraph-by-paragraph document interpretation, live AI conversation, offer comparison, or personalized analysis — see [Section 5](#5-explicitly-excluded-from-the-first-public-mvp).
 
 ---
 
-## Financial Terms
+## 4. Confirmed First Public MVP Scope
 
-Every important term includes:
+The confirmed scope of Stanovanjski kredit in the first public MVP release is defined by DR-015 and approved [[MVP]].
 
-- Simple explanation
-- Why it matters
-- Real-world example
-- Related concepts
+### 4.1 Learn
 
----
+Short, structured, plain-language educational content covering:
 
-## Monthly Payment Examples
+- the housing-loan process;
+- fixed vs. variable interest;
+- interest rate and effective cost;
+- down payment;
+- repayment period (loan duration);
+- early repayment;
+- refinancing.
 
-Interactive educational examples using:
+This is not a complete curriculum specification, and it does not include legal or regulatory claims.
 
-- Loan amount
-- Interest rate
-- Duration
+### 4.2 Monthly Payment Examples
 
-NorthStar explains the result.
+Simple educational examples illustrating the relationship between loan amount, interest rate, repayment period, and an approximate monthly payment.
 
-This is not a banking calculator.
+Trust boundaries:
 
----
+- educational and approximate;
+- not a banking calculator;
+- not a bank calculation;
+- not a bank offer;
+- not a guarantee;
+- not personal financial advice;
+- assumptions must be visible to the user.
 
-## Affordability
+This document does not define a formula, thresholds, amortization rules, or implementation details for these examples.
 
-Users can estimate:
+### 4.3 Links to Other Standalone Products
 
-- Safe monthly payment
-- Approximate affordability
+Stanovanjski kredit links to two other standalone NorthStar products:
 
-Inputs:
+- **Koliko kredita si lahko privoščim**
+- **Pojasni pojme**
 
-- Monthly income
-- Monthly expenses
-- Existing financial obligations
+Affordability is a shared capability supporting the standalone product Koliko kredita si lahko privoščim. Financial Terms is a shared capability supporting the standalone product Pojasni pojme. Stanovanjski kredit does not duplicate either capability — it links to both standalone products instead. This reuse does not reduce the standalone status of either product (DR-011, DR-012, DR-013, DR-015).
 
-Outputs should always be educational.
-
----
-
-## Ask AI
-
-Users can ask questions naturally.
-
-Examples:
-
-"I received a mortgage offer."
-
-"What does APR mean?"
-
-"Should I choose fixed or variable interest?"
-
-NorthStar explains concepts.
-
-NorthStar does not make decisions for users.
+The detailed behavior of Koliko kredita si lahko privoščim and Pojasni pojme is not defined in this document.
 
 ---
 
-## PDF Offer Explanation (MVP)
+## 5. Explicitly Excluded from the First Public MVP
 
-Users can upload a mortgage offer in PDF format.
+The following are excluded from the current release of Stanovanjski kredit (DR-015):
 
-NorthStar explains:
+- Ask AI;
+- PDF Offer Explanation / bank PDF analysis;
+- offer comparison;
+- personalized learning;
+- bank-meeting preparation;
+- advanced simulations;
+- user accounts;
+- saved history.
 
-- Financial terminology
-- Important clauses
-- Obligations
-- Costs
-- Fees
-- Risks
-- Questions users should ask the bank
-
-NorthStar never tells users which offer to choose.
-
----
-
-# User Journey
-
-Home
-↓
-Housing Loans
-↓
-Choose one:
-
-- Learn
-- Ask AI
-- Financial Terms
-- Monthly Examples
-- Upload Offer
-
-↓
-Understand
-↓
-Make an informed decision
+These are current release exclusions, not permanent product non-goals. None of them is confirmed for a later release; any future inclusion requires a new Founder-approved decision (see [Section 10](#10-future-scope-and-document-boundaries)).
 
 ---
 
-# Design Principles
+## 6. User Experience Principles
 
 The experience should feel:
 
-- Calm
-- Professional
-- Trustworthy
-- Educational
-- Simple
-
-Avoid information overload.
-
----
-
-# Success Criteria
-
-Users should leave the module thinking:
-
-"I finally understand housing loans."
-
-Success is measured by understanding.
-
-Not by how much time users spend inside the module.
+- calm;
+- clear;
+- educational;
+- transparent;
+- non-judgmental;
+- free of hidden persuasion;
+- free of false precision;
+- open about its assumptions and limitations;
+- understandable without specialist financial knowledge.
 
 ---
 
-# Future Versions
+## 7. High-Level User Experience
 
-Examples of future enhancements:
+1. User enters Stanovanjski kredit.
+2. User chooses to view Learn content or a Monthly Payment Example.
+3. User receives clear educational content or an approximate example, with assumptions shown.
+4. User can continue to Koliko kredita si lahko privoščim or Pojasni pojme.
+5. User leaves with better understanding and clearer questions.
 
-- Compare multiple mortgage offers
-- Personalized learning
-- Mortgage timeline
-- AI preparation for bank meetings
-- Advanced repayment simulations
-
-These are intentionally excluded from Version 1.
+This is a high-level description, not a screen-by-screen flow. It does not include document upload, document processing, document analysis, live AI, or offer-specific interpretation.
 
 ---
 
-# Definition of Success
+## 8. Trust and Product Boundaries
 
-A successful Housing Loans module should help users feel:
+- NorthStar is not a bank, lender, broker, or financial adviser.
+- Content is educational.
+- Estimates are not bank offers and not official creditworthiness assessments.
+- Stanovanjski kredit does not predict bank approval.
+- The final decision always belongs to the user.
+- Uncertainty must not be presented as certainty.
 
-- Better informed
-- More confident
-- Less anxious
+---
 
-The module succeeds when users understand their options.
+## 9. Success Criteria
 
-Not when they are persuaded to choose one.
+- Users understand key housing-loan concepts more clearly.
+- Users understand the assumptions behind the examples shown to them.
+- Users can identify useful questions to ask before speaking to a bank or adviser.
+- Users recognize the limits of educational examples.
+- The experience produces understanding rather than pressure.
+
+---
+
+## 10. Future Scope and Document Boundaries
+
+This document does not enumerate future candidate features. Future candidates and unresolved historical scope are tracked in [[Features]]. Current release scope is owned by [[MVP]]. Approved decisions and their supersession history are owned by [[Decision Register]].
+
+Future inclusion of any currently excluded item requires a new Founder-approved decision.
+
+---
+
+## 11. Related Documents
+
+- [[NorthStar Constitution]]
+- [[NorthStar OS Specification]]
+- [[Product Bible]]
+- [[Decision Register]]
+- [[MVP]]
+- [[Features]]
+- [[Design Bible]]
