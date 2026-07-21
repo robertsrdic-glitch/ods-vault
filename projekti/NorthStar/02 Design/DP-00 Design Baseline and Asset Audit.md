@@ -1,7 +1,7 @@
 # DP-00 Design Baseline and Asset Audit
 
 Version: 1.0
-Status: Draft
+Status: Approved
 Category: Design
 Owner: Founder
 Related Documents:
