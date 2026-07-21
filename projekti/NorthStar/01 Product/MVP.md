@@ -125,16 +125,101 @@ Vizualizacija mora ostati preprosta in razumljiva uporabniku brez finančnega zn
 
 ### 4.2 Pojasni pojme
 
-Jedrni produkt prvega javnega MVP releasea, s potrjenim namenom in produktnim statusom (DR-004, DR-012, DR-013). Osnovni namen: preproste razlage finančnih pojmov brez žargona, ki jih lahko sčasoma uporabljajo tudi drugi produkti (shared Financial Terms capability).
+Jedrni produkt prvega javnega MVP releasea, s potrjenim namenom in produktnim statusom (DR-004, DR-012, DR-013). Osnovni namen: preproste razlage finančnih pojmov brez žargona, ki jih lahko sčasoma uporabljajo tudi drugi produkti (shared Financial Terms capability). MVP scope in country content model produkta sta določena v DR-017.
+
+#### Tržni in vsebinski obseg
+
+- Prvi javni MVP podpira samo Slovenijo.
+- Uporablja `Slovenia Country Content Pack`.
+- Vsebuje približno 30–50 kuriranih, visoko prioritetnih finančnih pojmov.
+- Natančen, Founder-potrjen seznam pojmov še ni določen.
+
+#### Osnovna funkcionalnost
+
+- iskalno polje;
+- preproste kategorije;
+- dostop do posamezne razlage pojma;
+- povezave med sorodnimi pojmi.
+
+#### Struktura posamezne razlage
+
+Vsaka razlaga mora vsebovati najmanj:
+
+1. kratko razlago v preprostem jeziku;
+2. konkreten primer;
+3. pojasnilo, zakaj je pojem pomemben;
+4. povezane pojme.
+
+#### Country Content Pack model
+
+- Vsebine so organizirane po državnih paketih.
+- Nekateri pojmi imajo skupno konceptualno osnovo, vendar imajo lahko državne pravne, regulativne, davčne, bančne ali potrošniške posebnosti.
+- Vsebin za novo državo ni dovoljeno ustvariti samo z avtomatskim prevodom obstoječega paketa.
+- Vsak prihodnji country pack zahteva lokalno raziskavo, lokalizacijo, preverjanje in odobritev.
+- Arhitekturna pripravljenost za prihodnje države ne pomeni, da so te države del prvega javnega MVP scopea.
+
+#### Vloga AI
+
+AI lahko pomaga pri:
+
+- raziskovanju;
+- iskanju in primerjavi uradnih oziroma avtoritativnih virov;
+- pripravi osnutkov;
+- poenostavitvi razlage;
+- pripravi primerov;
+- zaznavanju možnih državno-specifičnih razlik.
+
+AI ne sme:
+
+- samodejno objaviti vsebine;
+- sam potrditi pravne ali finančne pravilnosti;
+- nadomestiti uredniškega pregleda;
+- ustvarjati sprotnih generativnih razlag uporabnikom v MVP produktu.
+
+#### Obvezna publishing in validacijska pregrada
+
+Pred objavo mora proces vključevati:
+
+1. raziskavo;
+2. evidentiranje virov;
+3. preverjanje virov;
+4. vsebinski oziroma uredniški pregled;
+5. odobritev;
+6. evidentiran datum zadnje validacije.
+
+#### Shared capability meja
+
+- Ista kurirana zbirka pojmov se lahko ponovno uporabi znotraj produkta Stanovanjski kredit kot shared Financial Terms capability.
+- Ta ponovna uporaba ne spreminja statusa Pojasni pojme kot samostojnega produkta prve faze.
+
+#### Izključeno iz prvega javnega MVP releasea
+
+- AI klepet;
+- avtomatsko generiranje odgovorov ali razlag za uporabnika;
+- avtomatska AI objava;
+- uporabniški račun;
+- shranjeni priljubljeni pojmi;
+- personalizirane razlage;
+- uporabniško ustvarjene vsebine;
+- country packi zunaj Slovenije;
+- avtomatsko prevajanje kot nadomestilo za lokalno raziskavo in validacijo.
+
+#### Odprta vprašanja
 
 `REQUIRES FOUNDER DECISION`
 
-Naslednje podrobnosti niso formalno določene v Decision Registerju ali Features.md in jih ta dokument ne sme sam določiti:
+Naslednje podrobnosti ostajajo odprte in jih ta dokument ne sme sam določiti:
 
-- natančen MVP obseg (koliko in kateri pojmi so del prvega releasea);
-- začetni nabor pojmov;
-- način iskanja in navigacije po pojmih;
-- ali gre samo za kurirane vsebine ali tudi za dodatno funkcionalnost (npr. iskalnik, kategorije, povezane teme).
+- natančen seznam približno 30–50 pojmov;
+- konkretne kategorije;
+- kriteriji za prioritizacijo pojmov;
+- natančni uradni viri za posamezni pojem;
+- uredniški in review proces;
+- odgovornost za končno odobritev vsebine;
+- natančen UX iskanja in navigacije;
+- tehnični format country packa;
+- accessibility zahteve;
+- način rednega ponovnega preverjanja zastarelih vsebin.
 
 ### 4.3 Stanovanjski kredit
 
