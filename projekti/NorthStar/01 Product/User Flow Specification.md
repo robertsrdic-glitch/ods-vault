@@ -1,22 +1,64 @@
 # User Flow Specification
 
+Historical scope: PDF Offer Explanation / bank-offer analysis concept
+
 Version: 1.0
 Status: Draft
+Historical Status: Pre-DR-002 — Non-authoritative for current MVP
 Category: Product
 Owner: Founder
 Related Documents:
 - [[NorthStar Constitution]]
-- [[NorthStar Brand DNA]]
+- [[NorthStar OS Specification]]
 - [[Product Bible]]
-- [[Design Bible]]
-- [[Housing Loans Specification]]
+- [[Decision Register]]
+- [[MVP]]
+- [[Features]]
 - [[User Journey Specification]]
+- [[Housing Loans Specification]]
+
+---
+
+> [!WARNING] Historical document — not current MVP authority
+> This document preserves a pre-DR-002 concept for a PDF-upload and bank-offer-analysis flow.
+>
+> It does not define the current first public MVP, NorthStar's current primary happy path, or a confirmed future feature.
+>
+> PDF Offer Explanation, bank PDF analysis, and Ask AI are excluded from the current first public MVP under DR-015. Their future status remains unresolved and requires a new Founder-approved decision.
+>
+> Current product and release authority is defined by [[Decision Register]], [[MVP]], [[Features]], [[Product Bible]], [[User Journey Specification]], and approved product specifications.
+
+---
+
+## Historical Context and Authority Boundary
+
+This document records an earlier concept in which a user uploaded a housing-loan PDF and NorthStar analyzed and explained the offer.
+
+That concept predates DR-002, DR-014, and DR-015.
+
+The flow below is preserved for historical traceability only. It must not be used to infer:
+
+- current MVP scope;
+- a current implementation requirement;
+- NorthStar's primary product journey;
+- a committed roadmap item;
+- a confirmed future release.
+
+The current first public MVP is governed by [[MVP]], [[Features]], [[Decision Register]], and approved product specifications.
+
+Any future PDF Offer Explanation product or feature requires:
+
+1. a new Founder-approved product decision;
+2. a newly approved current-scope specification;
+3. a product-specific user flow aligned with the decisions active at that time.
 
 ---
 
 # 1. Goal
 
-Define the complete primary "happy path" for NorthStar: a user uploads a housing loan PDF and leaves understanding their offer with confidence. This document describes behaviour only. It does not describe screens, layouts, or UI elements.
+*Historical pre-DR-002 content preserved below; not current MVP authority.*
+
+Historical concept: Define the complete primary "happy path" for NorthStar: a user uploads a housing loan PDF and leaves understanding their offer with confidence. This document describes behaviour only. It does not describe screens, layouts, or UI elements.
 
 ---
 
@@ -35,6 +77,8 @@ A person who has received, or is considering, a housing loan offer and wants to 
 ---
 
 # 4. User Journey
+
+*Historical pre-DR-002 content preserved below; not current MVP authority.*
 
 ---
 
@@ -124,6 +168,8 @@ A person who has received, or is considering, a housing loan offer and wants to 
 
 # 5. Decision Points
 
+*Historical pre-DR-002 content preserved below; not current MVP authority.*
+
 - **After upload:** does the document contain enough extractable information to proceed, or does NorthStar need to explain a limitation (see Error States)?
 - **After the initial explanation:** does the user want more detail (Step 5) or do they have what they need (Step 6)?
 - **At resolution:** does the user want to continue into an adjacent module (Affordability, Financial Terms) or end the session?
@@ -134,6 +180,8 @@ None of these decision points are made by NorthStar on the user's behalf — eac
 
 # 6. Error States
 
+*Historical pre-DR-002 content preserved below; not current MVP authority.*
+
 Major failure modes only.
 
 - **Unreadable or corrupted PDF:** NorthStar states plainly that the document could not be read and asks the user to try again, rather than guessing at its contents.
@@ -143,6 +191,8 @@ Major failure modes only.
 ---
 
 # 7. Trust Opportunities
+
+*Historical pre-DR-002 content preserved below; not current MVP authority.*
 
 - Communicating what NorthStar is doing during analysis, rather than a silent wait (Step 3).
 - Distinguishing confirmed facts from assumptions at every explanation point (Steps 3–5).
@@ -164,4 +214,19 @@ Major failure modes only.
 
 # 9. Definition of Success
 
+*Historical pre-DR-002 content preserved below; not current MVP authority.*
+
 The flow succeeds when the user can explain their housing loan offer in their own words, understands its costs and risks, and leaves the interaction having made no decision they didn't arrive at themselves. Success is measured by understanding achieved, not by engagement time or how impressive the analysis appears.
+
+---
+
+## Current Authority References
+
+- [[NorthStar Constitution]]
+- [[NorthStar OS Specification]]
+- [[Product Bible]]
+- [[Decision Register]]
+- [[MVP]]
+- [[Features]]
+- [[User Journey Specification]]
+- [[Housing Loans Specification]]
