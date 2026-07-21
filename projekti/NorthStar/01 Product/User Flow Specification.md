@@ -3,7 +3,7 @@
 Historical scope: PDF Offer Explanation / bank-offer analysis concept
 
 Version: 1.0
-Status: Draft
+Status: Approved
 Historical Status: Pre-DR-002 — Non-authoritative for current MVP
 Category: Product
 Owner: Founder
