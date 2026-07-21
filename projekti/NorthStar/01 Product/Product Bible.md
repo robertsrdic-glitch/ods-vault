@@ -1,6 +1,6 @@
  # Product Bible
 
-Status: Draft
+Status: Approved
 
 Version: 0.1
 
