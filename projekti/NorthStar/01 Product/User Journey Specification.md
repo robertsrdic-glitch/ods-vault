@@ -1,7 +1,7 @@
 # User Journey Specification
 
 Version: 1.0
-Status: Draft
+Status: Approved
 Category: Product
 Owner: Founder
 Related Documents:
