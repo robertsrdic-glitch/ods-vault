@@ -1,6 +1,6 @@
 # Care Circle Source Register
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded register status: Approved
 
 Maps every relevant Care Circle source document found in the application repository (at commit `99e9d9c52865d0d736af765702f514637133caed`) to its canonical ODS destination. No relevant source document was silently omitted.
@@ -67,5 +67,5 @@ Every Markdown file under `docs/` in the Care Circle repository at commit `99e9d
 **Source path:** entire `docs/` tree, README.md, PROJECT-STATUS.md
 **Source commit or commit range:** 0de98ffae03f5303dc3866ae5cf079d3625acbf6 .. 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded register status: Approved)
+**Canonical ODS status:** Approved (recorded register status: Approved)
 **Notes:** This register is the completeness proof for the consolidation. Its own recursive source scan is recorded in the evidence file.

@@ -1,6 +1,6 @@
 # Care Circle Source of Truth and Repository Map
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded governance status: Approved
 
 ## Authoritative locations
@@ -41,5 +41,5 @@ See [[Care Circle Collaboration and Approval Workflow]].
 **Source path:** repository root structure; PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded governance status: Approved)
+**Canonical ODS status:** Approved (recorded governance status: Approved)
 **Notes:** Baseline SHAs and branch/remote state verified directly against the live repository (`git rev-parse`, `git ls-remote`) during this consolidation, not taken solely from the briefing.

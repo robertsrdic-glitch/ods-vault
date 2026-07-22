@@ -1,6 +1,6 @@
 # Navigation, Accessibility and Simplicity
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status: Approved
 
 ## Permanent UX rule
@@ -47,5 +47,5 @@ No hamburger menu. Back behavior follows platform conventions. Unsaved work is p
 **Source path:** docs/ux/UX-P04-Simplicity-First.md; docs/ux/UX-012-Navigation-and-Global-Interaction.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status: Approved)
+**Canonical ODS status:** Approved (source decision status: Approved)
 **Notes:** Structured consolidation: UX-P04's rule list (Approved 2026-07-21) is reproduced verbatim, combined in one document with the navigation rules drawn from UX-012. Combining two separate sources into one document is the reason for the "Structured consolidation" treatment recorded in the Source Register, even though neither source's own wording was shortened. This is the permanent, cross-cutting simplicity rule referenced throughout the Care Circle ODS documentation.

@@ -1,6 +1,6 @@
 # Care Circle Security Baseline
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status (SEC-001 baseline): Approved
 Recorded WP-04 status: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending
 
@@ -92,5 +92,5 @@ Not implemented in WP-04: Drizzle ORM/Kit, application migrations, schema versio
 **Source path:** docs/security/SEC-001-Security-Baseline.md; docs/releases/WP-04-Encrypted-SQLite-Bootstrap-and-Key-Management.md; PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status, SEC-001 baseline: Approved; recorded WP-04 status: Implemented and statically validated, committed, pushed and verified, Android Runtime Validation Pending)
+**Canonical ODS status:** Approved (source decision status, SEC-001 baseline: Approved; recorded WP-04 status: Implemented and statically validated, committed, pushed and verified, Android Runtime Validation Pending)
 **Notes:** SEC-001 copied in full. WP-04 section is a structured consolidation of the WP-04 release document and PROJECT-STATUS.md. The WP-04 release document's own file text still reads "no commit or push has occurred," reflecting the moment it was authored, pre-commit — the verified Git state (branch main, HEAD `99e9d9c52865d0d736af765702f514637133caed`, origin/main and live remote matching, working tree clean) supersedes that stale in-file statement, per the current authoritative baseline supplied for this consolidation. This is flagged explicitly, not silently corrected in the source file.

@@ -1,6 +1,6 @@
 # WP-04 — Encrypted SQLite Bootstrap and Key Management
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 
 **Recorded WP status: Implemented and statically validated, including two post-review security remediation rounds; committed, pushed and verified; Android Runtime Validation Pending.**
 
@@ -141,5 +141,5 @@ Committed and pushed to `origin/main` as `99e9d9c52865d0d736af765702f514637133ca
 **Source path:** docs/releases/WP-04-Encrypted-SQLite-Bootstrap-and-Key-Management.md; PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded WP status: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
+**Canonical ODS status:** Approved (recorded WP status: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
 **Notes:** Structured consolidation of the full WP-04 release document (the longest and most detailed source in the repository) and PROJECT-STATUS.md's WP-04 sections. All security findings, remediation rounds, and limitations preserved in full. The release document's closing line ("No commit or push has occurred") is a stale pre-commit statement superseded by the verified Git baseline supplied for this consolidation (HEAD/origin/main/live-remote all match `99e9d9c52865d0d736af765702f514637133caed`). No claim of Android runtime validation, production readiness, or completion is made anywhere in this document.

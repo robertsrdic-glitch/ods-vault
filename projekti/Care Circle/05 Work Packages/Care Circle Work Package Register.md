@@ -1,6 +1,6 @@
 # Care Circle Work Package Register
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded project status: In Progress
 
 Tracks every Care Circle implementation work package in the controlled, CTO-reviewed, Founder-approved sequence defined by [[Care Circle Collaboration and Approval Workflow]] and [[../03 Architecture/Care Circle Architecture Decision Register|ADR-010 Roadmap Discipline]].
@@ -83,5 +83,5 @@ See [[Care Circle Collaboration and Approval Workflow]] for the full governance 
 **Source path:** docs/releases/WP-01 through WP-04; PROJECT-STATUS.md; git log (commit metadata)
 **Source commit or commit range:** 0de98ffae03f5303dc3866ae5cf079d3625acbf6 .. 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded project status: In Progress; see per-WP status above)
+**Canonical ODS status:** Approved (recorded project status: In Progress; see per-WP status above)
 **Notes:** Commit SHAs cross-checked against `git log`/`git cat-file` in the live Care Circle repository during this consolidation; all four exist as stated. WP-04 status language matches the exact required phrasing and is never rendered as "Completed" anywhere in this register.

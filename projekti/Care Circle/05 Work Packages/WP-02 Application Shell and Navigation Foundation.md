@@ -1,6 +1,6 @@
 # WP-02 — Application Shell and Navigation Foundation
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded WP status: Completed, committed, pushed and verified
 Date: 2026-07-21
 Risk: Low to medium
@@ -59,5 +59,5 @@ Completed, committed, pushed and verified via the same CTO/Founder approval work
 **Source path:** docs/releases/WP-02-Application-Shell-and-Navigation-Foundation.md
 **Source commit or commit range:** f711dc67bab8a1e36c01c9ca1e37c11c5a9a8982
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded WP status: Completed, committed, pushed and verified)
+**Canonical ODS status:** Approved (recorded WP status: Completed, committed, pushed and verified)
 **Notes:** Structured consolidation of the WP-02 release document: bullet lists condensed into semicolon-joined prose, a committed-file list added from `git show --stat`, and the source's pre-commit conditional commit/push language replaced with the actual commit/push state now that the commit is verified. No decision, scope item, or validation result was dropped or reinterpreted.

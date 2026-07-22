@@ -1,6 +1,6 @@
 # Care Circle MVP Scope
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status: Approved
 
 ## Included
@@ -59,5 +59,5 @@ See [[Care Circle Work Package Register]] for the controlled sequence in which t
 **Source path:** docs/product/MVP-001-MVP-Scope.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status: Approved)
+**Canonical ODS status:** Approved (source decision status: Approved)
 **Notes:** Full copy of MVP-001 (Approved 2026-07-21). No content altered.

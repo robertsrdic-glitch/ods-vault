@@ -1,6 +1,6 @@
 # Care Circle Dashboard
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded project status: In Progress
 
 ## Product purpose
@@ -42,19 +42,17 @@ Full detail: [[../05 Work Packages/Care Circle Work Package Register]].
 
 ## Current next controlled step
 
-CTO review and Founder document/local-commit approval are complete.
+The Care Circle ODS project foundation is published and independently verified on the live remote. This final lifecycle-approval commit exists locally only.
 
-1. Create and verify the Care Circle-only local ODS commit.
-2. Obtain separate explicit Founder approval for the ODS push.
-3. Push the Care Circle ODS commit and independently verify the live remote.
-4. Perform a controlled lifecycle-finalization update from Founder Approved / publication pending to Approved, only after live verification and through separately reviewed commit/push approvals.
-5. On the home x64 computer, synchronize both `care-circle` and `ods-vault`.
-6. Perform a read-only Android development-environment assessment.
-7. Obtain a separate explicit decision for the Android application ID.
-8. Install or repair only the required Android tooling through a separately approved task.
-9. Perform WP-04 native Android build and SQLCipher runtime validation.
-10. Complete the final WP-04 runtime review and follow-up documentation, commit and push workflow.
-11. Define WP-05 before implementation.
+1. Obtain separate explicit Founder approval for pushing the Care Circle ODS final lifecycle commit.
+2. Push that commit and independently verify local HEAD, origin/main and the live remote.
+3. On the home x64 computer, synchronize both `care-circle` and `ods-vault`.
+4. Perform a read-only Android development-environment assessment.
+5. Obtain a separate explicit Founder decision for the permanent Android application ID.
+6. Install or repair only required Android tooling through a separately approved task.
+7. Perform WP-04 native Android build and SQLCipher runtime validation.
+8. Complete the final WP-04 runtime CTO review and follow-up ODS/code commit and push workflow.
+9. Define WP-05 before any WP-05 implementation begins.
 
 WP-05 remains Proposed/Next and has not been started.
 
@@ -103,5 +101,5 @@ Full sequence: [[../06 Governance/Care Circle Project Status]].
 **Source path:** PROJECT-STATUS.md; README.md; full docs/ tree
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded project status: In Progress)
+**Canonical ODS status:** Approved (recorded project status: In Progress)
 **Notes:** Dashboard synthesizes all canonical Care Circle ODS documents created in this consolidation; it introduces no new facts beyond what is recorded and sourced in those documents.

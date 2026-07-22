@@ -1,6 +1,6 @@
 # Care Circle UX and Design Foundation
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status: Approved
 
 Structured consolidation of the approved UX and design sources. All material decisions and constraints are represented, while wording and layout have been condensed for canonical ODS use — for example, DS-001's Core Components bullet list is reproduced here as a comma-separated paragraph, and the 13 UX specifications are merged into one document instead of remaining standalone files.
@@ -162,5 +162,5 @@ No hamburger menu. Back behavior follows platform conventions. Unsaved work is p
 **Source path:** docs/ux/UX-001-Onboarding.md through docs/ux/UX-012-Navigation-and-Global-Interaction.md; docs/design/DS-001-Final-Design-System.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status: Approved)
+**Canonical ODS status:** Approved (source decision status: Approved)
 **Notes:** Structured consolidation of 13 UX specifications (UX-001–UX-012 plus UX-P04, cross-referenced from [[Navigation Accessibility and Simplicity]]) plus DS-001, all Approved. Most individual UX sections closely track their one-paragraph sources; DS-001's Core Components list was reformatted from a bullet list into a comma-separated paragraph. No material decision or constraint was dropped, but wording and layout were condensed — this is Structured consolidation, not a verbatim/full copy.

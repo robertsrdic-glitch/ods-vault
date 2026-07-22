@@ -1,6 +1,6 @@
 # Care Circle Product Foundation
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status: Approved
 
 ## Vision
@@ -93,5 +93,5 @@ See [[Care Circle Architecture Overview]] for full technical detail.
 **Source path:** README.md; docs/product/PRODUCT-001-Product-Definition.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status: Approved)
+**Canonical ODS status:** Approved (source decision status: Approved)
 **Notes:** Structured consolidation of README.md (project summary) and PRODUCT-001 (Approved 2026-07-21), merged and reorganized under new section headers. All material content from both sources is represented and no decision was reinterpreted, but this is not a verbatim/full copy of either source.

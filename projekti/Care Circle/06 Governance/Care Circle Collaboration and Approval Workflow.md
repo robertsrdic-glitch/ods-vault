@@ -1,6 +1,6 @@
 # Care Circle Collaboration and Approval Workflow
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded workflow status: Approved (in active use)
 
 ## Approval sequence
@@ -35,5 +35,5 @@ If a work package would require Android/iOS native build tooling that is not pre
 **Source path:** PROJECT-STATUS.md; docs/releases/WP-01 through WP-04 (commit/push-state sections)
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded workflow status: Approved, in active use)
+**Canonical ODS status:** Approved (recorded workflow status: Approved, in active use)
 **Notes:** Structured consolidation of the approval workflow as consistently described across all four WP release documents and PROJECT-STATUS.md. No separate standalone "collaboration rules" document exists in the Care Circle repository (unlike NorthStar's Collaboration Rules) — this document reconstructs the workflow from its consistent application across all four work packages.

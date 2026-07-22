@@ -1,6 +1,6 @@
 # WP-01 — Controlled Expo Application Bootstrap
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded WP status: Completed, committed, pushed and verified
 Date: 2026-07-21
 Risk: Low to medium
@@ -55,5 +55,5 @@ Completed, committed, pushed and verified via CTO review → Founder commit appr
 **Source path:** docs/releases/WP-01-Controlled-Expo-Application-Bootstrap.md
 **Source commit or commit range:** 0de98ffae03f5303dc3866ae5cf079d3625acbf6
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded WP status: Completed, committed, pushed and verified)
+**Canonical ODS status:** Approved (recorded WP status: Completed, committed, pushed and verified)
 **Notes:** Structured consolidation of the WP-01 release document: bullet lists (Implemented, Excluded) condensed into semicolon-joined prose, a committed-file list added from `git show --stat`, and the source's pre-commit "no commit or push is permitted until..." conditional replaced with the actual commit/push state now that the commit is verified. No decision, scope item, or validation result was dropped or reinterpreted.

@@ -1,6 +1,6 @@
 # WP-03 — Localization Foundation
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Recorded WP status: Completed, committed, pushed and verified
 Date: 2026-07-21
 Risk: Low
@@ -72,5 +72,5 @@ Completed, committed, pushed and verified via the same CTO/Founder approval work
 **Source path:** docs/releases/WP-03-Localization-Foundation.md
 **Source commit or commit range:** ae7a7f0cefe6972daa118ab703611d3feeed8a19
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (recorded WP status: Completed, committed, pushed and verified)
+**Canonical ODS status:** Approved (recorded WP status: Completed, committed, pushed and verified)
 **Notes:** Structured consolidation of the WP-03 release document: bullet lists condensed into semicolon-joined prose, a committed-file list added from `git show --stat`. The source document's own closing line ("No commit or push has occurred...") reflects its pre-commit authoring moment; the verified Git history confirms this WP is committed and pushed, and the ODS "Commit and push state" section reflects that, not the stale source wording. No decision, scope item, or validation result was dropped or reinterpreted.

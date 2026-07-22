@@ -1,6 +1,6 @@
 # Care Circle Domain Model Overview
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status: Approved
 
 Full copy of DM-001 — Final Domain Model Specification.
@@ -125,5 +125,5 @@ No domain tables, schema, repository or business logic exist in the codebase as 
 **Source path:** docs/architecture/DM-001-Final-Domain-Model.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status: Approved)
+**Canonical ODS status:** Approved (source decision status: Approved)
 **Notes:** Full copy of DM-001 (Approved 2026-07-21). Implementation-status note added to make clear this is an approved design, not yet implemented; no decision content altered.

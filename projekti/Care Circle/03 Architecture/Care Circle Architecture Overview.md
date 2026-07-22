@@ -1,6 +1,6 @@
 # Care Circle Architecture Overview
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status: Approved
 
 Full copy of TA-001 — Technical Architecture Specification.
@@ -181,5 +181,5 @@ Release is blocked unless verified on real devices:
 **Source path:** docs/architecture/TA-001-Technical-Architecture.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status: Approved)
+**Canonical ODS status:** Approved (source decision status: Approved)
 **Notes:** Full copy of TA-001 (Approved 2026-07-21). One clarifying cross-reference added noting WP-05/Drizzle status is Proposed/Next, consistent with [[Care Circle Architecture Decision Register]] and current PROJECT-STATUS.md. No approved decision altered.

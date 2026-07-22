@@ -1,6 +1,6 @@
 # Care Circle Architecture Decision Register
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Source decision status: Approved
 
 Every source ADR (ADR-001 through ADR-010) is one short decision paragraph in the source repository, with no separate Rationale/Consequences sections. Where the source does not contain enough detail for a field, that field is marked "Not specified in source" rather than invented.
@@ -121,5 +121,5 @@ Every source ADR (ADR-001 through ADR-010) is one short decision paragraph in th
 **Source path:** docs/adr/ADR-001 through docs/adr/ADR-010
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (source decision status: Approved)
+**Canonical ODS status:** Approved (source decision status: Approved)
 **Notes:** All 10 ADRs referenced in PROJECT-STATUS.md as "ADR-001 through ADR-010" were located and are preserved in full. No ADR number was invented; none was missing. Source ADRs contain no explicit date, rationale, or consequences fields — those fields are marked "Not specified in source" rather than fabricated, with consequences inferred only where directly traceable to another approved document (noted inline).
