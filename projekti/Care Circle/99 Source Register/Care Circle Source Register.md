@@ -1,6 +1,6 @@
 # Care Circle Source Register
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Previous revision status: Approved (2026-07-22)
 Recorded register status: Approved
 
@@ -75,5 +75,5 @@ The four 2026-07-24 home x64 evidence files are indexed as Supporting evidence w
 **Source path:** entire `docs/` tree, README.md, PROJECT-STATUS.md
 **Source commit or commit range:** 0de98ffae03f5303dc3866ae5cf079d3625acbf6 .. 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded register status remains Approved)
+**Canonical ODS status:** Approved (previous revision Approved; recorded register status remains Approved)
 **Notes:** This register remains the completeness proof for the 36 application documentation sources. The Draft update adds four independently hash-verified Supporting evidence rows, bringing supporting sources to 6 and total table rows to 42 without changing the 14 Full-copy rows.

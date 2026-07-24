@@ -1,6 +1,6 @@
 # Care Circle Dashboard
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Previous revision status: Approved (2026-07-22)
 Recorded project status: In Progress
 
@@ -21,7 +21,7 @@ Care Circle is a calm, privacy-first, local-first medication organizer for indiv
 - Commit subject: "feat: add encrypted SQLite bootstrap foundation"
 - Care Circle application working tree: clean; staging: empty
 
-Before the 2026-07-24 Draft consolidation, both home x64 repositories matched `origin/main` and live GitHub, were 0 ahead / 0 behind, and had clean working trees with empty staging. The `care-circle` repository remains clean, synchronized and unchanged at `99e9d9c52865d0d736af765702f514637133caed`; `ods-vault` remains based on synchronized live HEAD `ebb46c05e5c47baec3c9935e864cc5207068257a` and currently contains exactly eight unstaged Care Circle Draft modifications pending CTO and Founder review, with empty staging, no untracked repository files, and no commit or push performed.
+Before the 2026-07-24 consolidation, both home x64 repositories were clean and synchronized. The consolidation commit `ee009e5dad1817865feec0c416c7f0a21ad500c2` was subsequently pushed and independently live verified. At that verified checkpoint, local HEAD, `origin/main` and live GitHub main matched that commit, ahead/behind was 0/0, and the ODS working tree and staging were clean; the `care-circle` repository remained clean, synchronized and unchanged at `99e9d9c52865d0d736af765702f514637133caed`. This final lifecycle-status revision follows the same separate local-commit, push and live-verification workflow.
 
 ## ODS source-of-truth statement
 
@@ -111,5 +111,5 @@ Full sequence: [[../06 Governance/Care Circle Project Status]].
 **Source path:** PROJECT-STATUS.md; README.md; full docs/ tree
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded project status remains In Progress)
+**Canonical ODS status:** Approved (previous revision Approved; recorded project status remains In Progress)
 **Notes:** Dashboard synthesizes the canonical Care Circle ODS documents and the four verified 2026-07-24 supporting-evidence files indexed in the Source Register. The prior Approved revision and all recorded work-package states are preserved.

@@ -1,6 +1,6 @@
 # Care Circle Project Status
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Previous revision status: Approved (2026-07-22)
 Recorded project status: In Progress
 
@@ -31,7 +31,7 @@ WP-01, WP-02 and WP-03 are Completed, committed, pushed and verified. WP-04 is i
 
 ## Current verified readiness and remaining gates
 
-The ODS lifecycle consolidation commit is live on GitHub. Before the current Draft consolidation, the home x64 `care-circle` and `ods-vault` repositories matched `origin/main` and live GitHub, were 0 ahead / 0 behind, and had clean working trees with empty staging. The application repository remains clean, synchronized and unchanged at `99e9d9c52865d0d736af765702f514637133caed`; the ODS Vault remains based on synchronized live HEAD `ebb46c05e5c47baec3c9935e864cc5207068257a` and currently contains exactly eight unstaged Care Circle Draft modifications pending review, with empty staging, no untracked repository files, and no commit or push performed. The Android environment and tooling are installed, configured and verified, including JDK 17, Android Studio/SDK tools, persisted `JAVA_HOME`/`ANDROID_HOME`/user `Path` state and usable WHPX acceleration. The ChatGPT Business/Codex local pilot succeeded under controlled permissions and left both repositories unchanged at that pilot checkpoint.
+The ODS lifecycle consolidation commit is live on GitHub. Before the 2026-07-24 consolidation, both home x64 repositories were clean and synchronized. The consolidation commit `ee009e5dad1817865feec0c416c7f0a21ad500c2` was subsequently pushed and independently live verified. At that verified checkpoint, local HEAD, `origin/main` and live GitHub main matched that commit, ahead/behind was 0/0, and the ODS working tree and staging were clean; the application repository remained clean, synchronized and unchanged at `99e9d9c52865d0d736af765702f514637133caed`. This final lifecycle-status revision follows the same separate local-commit, push and live-verification workflow. The Android environment and tooling are installed, configured and verified, including JDK 17, Android Studio/SDK tools, persisted `JAVA_HOME`/`ANDROID_HOME`/user `Path` state and usable WHPX acceleration. The ChatGPT Business/Codex local pilot succeeded under controlled permissions and left both repositories unchanged at that pilot checkpoint.
 
 WP-04 native runtime work has not begun. Remaining gates include the permanent application ID, validation-device sequence, controlled dependency installation, device/emulator setup, Expo native generation/build and SQLCipher/SecureStore runtime evidence.
 
@@ -57,5 +57,5 @@ WP-05 (Drizzle schema and migration foundation) remains Proposed/Next and is not
 **Source path:** PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded project status remains In Progress)
+**Canonical ODS status:** Approved (previous revision Approved; recorded project status remains In Progress)
 **Notes:** The prior Approved revision is a structured consolidation of PROJECT-STATUS.md at application HEAD. The 2026-07-24 Draft update incorporates verified home x64 readiness evidence. This ODS document remains the canonical documentation status record after review; the code repository's PROJECT-STATUS.md remains its operational copy per [[Care Circle Source of Truth and Repository Map]].

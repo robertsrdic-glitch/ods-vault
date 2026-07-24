@@ -1,6 +1,6 @@
 # Care Circle Work Package Register
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Previous revision status: Approved (2026-07-22)
 Recorded project status: In Progress
 
@@ -84,5 +84,5 @@ See [[Care Circle Collaboration and Approval Workflow]] for the full governance 
 **Source path:** docs/releases/WP-01 through WP-04; PROJECT-STATUS.md; git log (commit metadata)
 **Source commit or commit range:** 0de98ffae03f5303dc3866ae5cf079d3625acbf6 .. 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded project status remains In Progress; see unchanged per-WP statuses above)
+**Canonical ODS status:** Approved (previous revision Approved; recorded project status remains In Progress; see unchanged per-WP statuses above)
 **Notes:** Commit SHAs cross-checked against `git log`/`git cat-file` in the live Care Circle repository during the Approved consolidation; all four exist as stated. The 2026-07-24 update records tooling readiness only. WP-04 remains Android Runtime Validation Pending, and WP-05 remains not started.

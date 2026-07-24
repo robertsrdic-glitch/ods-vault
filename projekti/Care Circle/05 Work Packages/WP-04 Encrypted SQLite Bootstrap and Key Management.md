@@ -1,6 +1,6 @@
 # WP-04 — Encrypted SQLite Bootstrap and Key Management
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Previous revision status: Approved (2026-07-22)
 
 **Recorded WP status: Implemented and statically validated, including two post-review security remediation rounds; committed, pushed and verified; Android Runtime Validation Pending.**
@@ -14,7 +14,7 @@ This is the highest-risk work-package checkpoint implemented to date. WP-04 must
 
 ## Current-state readiness update — 2026-07-24
 
-- Before this Draft consolidation, the home x64 repositories at `C:\Users\Robert\Projects\care-circle` and `C:\Users\Robert\Documents\ods-vault` matched `origin/main` and live GitHub, were 0 ahead / 0 behind, and had clean working trees with empty staging. The Care Circle application remains clean, synchronized and unchanged at `99e9d9c52865d0d736af765702f514637133caed`; the ODS Vault remains based on synchronized live HEAD `ebb46c05e5c47baec3c9935e864cc5207068257a` and now contains exactly eight unstaged Care Circle Draft modifications pending review, with empty staging, no untracked repository files, and no commit or push performed.
+- Before the 2026-07-24 consolidation, both home x64 repositories were clean and synchronized. The consolidation commit `ee009e5dad1817865feec0c416c7f0a21ad500c2` was subsequently pushed and independently live verified. At that verified checkpoint, local HEAD, `origin/main` and live GitHub main matched that commit, ahead/behind was 0/0, and the ODS working tree and staging were clean; the Care Circle application repository remained clean, synchronized and unchanged at `99e9d9c52865d0d736af765702f514637133caed`. This final lifecycle-status revision follows the same separate local-commit, push and live-verification workflow.
 - Installed and verified Android tooling: Eclipse Temurin JDK 17.0.19 (with the existing JDK 25 preserved), Android Studio stable 2026.1.2, Android SDK Platform 36.1, Sources for Android 36.1, Build-Tools 36.0.0, Platform-Tools 37.0.0, Command-line Tools 22.0 and Android Emulator 36.6.11.
 - `JAVA_HOME` points to the verified JDK 17 root. `ANDROID_HOME` points to `C:\Users\Robert\AppData\Local\Android\Sdk`. Required Android user `Path` entries are persisted once each.
 - WHPX acceleration is available and usable.
@@ -153,5 +153,5 @@ Committed and pushed to `origin/main` as `99e9d9c52865d0d736af765702f514637133ca
 **Source path:** docs/releases/WP-04-Encrypted-SQLite-Bootstrap-and-Key-Management.md; PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded WP status remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
+**Canonical ODS status:** Approved (previous revision Approved; recorded WP status remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
 **Notes:** The Approved revision is a structured consolidation of the full WP-04 release document and PROJECT-STATUS.md's WP-04 sections. The 2026-07-24 Draft update adds verified home x64 tooling and controlled-execution readiness from four supporting-evidence files without changing the recorded WP status. No claim of Android runtime validation, production readiness or completion is made.

@@ -1,6 +1,6 @@
 # Care Circle Security Baseline
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Previous revision status: Approved (2026-07-22)
 Source decision status (SEC-001 baseline): Approved
 Recorded WP-04 status: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending
@@ -99,5 +99,5 @@ Not implemented in WP-04: Drizzle ORM/Kit, application migrations, schema versio
 **Source path:** docs/security/SEC-001-Security-Baseline.md; docs/releases/WP-04-Encrypted-SQLite-Bootstrap-and-Key-Management.md; PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; source decision status, SEC-001 baseline, remains Approved; recorded WP-04 status remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
+**Canonical ODS status:** Approved (previous revision Approved; source decision status, SEC-001 baseline, remains Approved; recorded WP-04 status remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
 **Notes:** SEC-001 was copied in full in the previous Approved revision. The WP-04 section is a structured consolidation of the WP-04 release document and PROJECT-STATUS.md. The 2026-07-24 Draft update preserves the earlier environment statement as dated historical evidence and adds only the verified current home x64 tooling state; it changes no security architecture, database design, key-management rule or WP scope.

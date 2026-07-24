@@ -1,6 +1,6 @@
 # Care Circle Collaboration and Approval Workflow
 
-Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Document status: Approved
 Previous revision status: Approved (2026-07-22)
 Recorded workflow status: Approved (in active use)
 
@@ -45,5 +45,5 @@ If a work package would require missing Android/iOS native build tooling or woul
 **Source path:** PROJECT-STATUS.md; docs/releases/WP-01 through WP-04 (commit/push-state sections)
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
 **Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
-**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded workflow remains Approved, in active use)
+**Canonical ODS status:** Approved (previous revision Approved; recorded workflow remains Approved, in active use)
 **Notes:** The prior Approved revision reconstructs the workflow consistently applied across WP-01 through WP-04. The 2026-07-24 Draft update records the controlled ChatGPT/Codex/Claude division of work without changing any Founder approval, commit, push, deployment or heightened-review gate.
