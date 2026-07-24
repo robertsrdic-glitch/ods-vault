@@ -1,6 +1,7 @@
 # Care Circle Security Baseline
 
-Document status: Approved
+Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Previous revision status: Approved (2026-07-22)
 Source decision status (SEC-001 baseline): Approved
 Recorded WP-04 status: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending
 
@@ -72,7 +73,13 @@ Two CTO security-remediation rounds were completed before this checkpoint, both 
 
 ### Android runtime validation — pending, not yet performed
 
-**Android native build and runtime validation have not occurred.** The local development environment has no Java installation, no Android SDK (`ANDROID_HOME`), no `adb`, and no Gradle, and `app.json` has no `android.package`/`ios.bundleIdentifier` configured. Per the WP-04 rules, the native/prebuild stage was stopped rather than inventing an identifier or installing tooling.
+**Historical environment record — 2026-07-21:** Android native build and runtime validation had not occurred. The computer inspected at that checkpoint had no Java installation, no Android SDK (`ANDROID_HOME`), no `adb` and no Gradle, and `app.json` had no `android.package`/`ios.bundleIdentifier` configured. Per the WP-04 rules, the native/prebuild stage stopped rather than inventing an identifier or installing tooling. This paragraph is preserved as evidence of the 2026-07-21 environment and is no longer the current home x64 tooling state.
+
+**Current-state update — 2026-07-24:** Eclipse Temurin JDK 17.0.19 is installed, and `JAVA_HOME` points to that verified JDK 17 installation. The pre-existing JDK 25 remains installed. Android Studio stable 2026.1.2 is installed, and `ANDROID_HOME` points to `C:\Users\Robert\AppData\Local\Android\Sdk`. Android Platform 36.1, Build-Tools 36.0.0, Platform-Tools 37.0.0, Command-line Tools 22.0 and Emulator 36.6.11 are installed; WHPX is available and usable; and the required user `Path` entries are correctly persisted.
+
+No Android Virtual Device or Android system image exists yet. No project dependency installation, Expo prebuild, `android/` generation, native build, APK installation or SQLCipher Android runtime validation has occurred. No application identifier has been invented. Tooling readiness is not Android runtime validation.
+
+**WP-04 remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending.**
 
 SQLCipher's actual on-device behavior is therefore **unverified beyond static and unit-test evidence**. This includes:
 
@@ -91,6 +98,6 @@ Not implemented in WP-04: Drizzle ORM/Kit, application migrations, schema versio
 **Source repository:** https://github.com/robertsrdic-glitch/care-circle.git
 **Source path:** docs/security/SEC-001-Security-Baseline.md; docs/releases/WP-04-Encrypted-SQLite-Bootstrap-and-Key-Management.md; PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
-**Consolidated on:** 2026-07-22
-**Canonical ODS status:** Approved (source decision status, SEC-001 baseline: Approved; recorded WP-04 status: Implemented and statically validated, committed, pushed and verified, Android Runtime Validation Pending)
-**Notes:** SEC-001 copied in full. WP-04 section is a structured consolidation of the WP-04 release document and PROJECT-STATUS.md. The WP-04 release document's own file text still reads "no commit or push has occurred," reflecting the moment it was authored, pre-commit — the verified Git state (branch main, HEAD `99e9d9c52865d0d736af765702f514637133caed`, origin/main and live remote matching, working tree clean) supersedes that stale in-file statement, per the current authoritative baseline supplied for this consolidation. This is flagged explicitly, not silently corrected in the source file.
+**Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
+**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; source decision status, SEC-001 baseline, remains Approved; recorded WP-04 status remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
+**Notes:** SEC-001 was copied in full in the previous Approved revision. The WP-04 section is a structured consolidation of the WP-04 release document and PROJECT-STATUS.md. The 2026-07-24 Draft update preserves the earlier environment statement as dated historical evidence and adds only the verified current home x64 tooling state; it changes no security architecture, database design, key-management rule or WP scope.

@@ -1,6 +1,7 @@
 # Care Circle Work Package Register
 
-Document status: Approved
+Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Previous revision status: Approved (2026-07-22)
 Recorded project status: In Progress
 
 Tracks every Care Circle implementation work package in the controlled, CTO-reviewed, Founder-approved sequence defined by [[Care Circle Collaboration and Approval Workflow]] and [[../03 Architecture/Care Circle Architecture Decision Register|ADR-010 Roadmap Discipline]].
@@ -55,7 +56,7 @@ Full record: [[WP-03 Localization Foundation]].
 - **Security remediation:** Two CTO security-remediation rounds (4 findings + 3 findings, all fixed). See [[../04 Security/Care Circle Security Baseline|Care Circle Security Baseline]] for the full list.
 - **Static validation:** 77 unit tests across 5 files; TypeScript, ESLint, validator, `npm run check`, Expo Doctor 20/20, `expo config --type public`, Android JS bundle export, secret scan, UTF-8-without-BOM — all PASS.
 - **Commit:** `99e9d9c52865d0d736af765702f514637133caed` — "feat: add encrypted SQLite bootstrap foundation" — committed, pushed and GitHub-verified (origin/main and live remote match).
-- **Android runtime blocker:** No Java, Android SDK, `adb` or Gradle in the local environment; no `android.package`/`ios.bundleIdentifier` configured. Native/prebuild stage was stopped per the mandatory rules rather than inventing an identifier or installing tooling.
+- **2026-07-24 runtime-readiness update:** Home x64 repository synchronization and Android toolchain prerequisites are verified, including JDK 17, Android Studio/SDK tooling, persisted environment variables and usable WHPX acceleration. Native runtime work has not begun. Remaining gates are the permanent application ID decision, controlled dependency installation, device/emulator setup, Expo prebuild/native build and captured SQLCipher/SecureStore runtime evidence.
 - **Status:** Static checkpoint implemented, CTO approved, committed, pushed and verified; Android runtime validation pending.
 
 Full record: [[WP-04 Encrypted SQLite Bootstrap and Key Management]].
@@ -82,6 +83,6 @@ See [[Care Circle Collaboration and Approval Workflow]] for the full governance 
 **Source repository:** https://github.com/robertsrdic-glitch/care-circle.git
 **Source path:** docs/releases/WP-01 through WP-04; PROJECT-STATUS.md; git log (commit metadata)
 **Source commit or commit range:** 0de98ffae03f5303dc3866ae5cf079d3625acbf6 .. 99e9d9c52865d0d736af765702f514637133caed
-**Consolidated on:** 2026-07-22
-**Canonical ODS status:** Approved (recorded project status: In Progress; see per-WP status above)
-**Notes:** Commit SHAs cross-checked against `git log`/`git cat-file` in the live Care Circle repository during this consolidation; all four exist as stated. WP-04 status language matches the exact required phrasing and is never rendered as "Completed" anywhere in this register.
+**Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
+**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded project status remains In Progress; see unchanged per-WP statuses above)
+**Notes:** Commit SHAs cross-checked against `git log`/`git cat-file` in the live Care Circle repository during the Approved consolidation; all four exist as stated. The 2026-07-24 update records tooling readiness only. WP-04 remains Android Runtime Validation Pending, and WP-05 remains not started.

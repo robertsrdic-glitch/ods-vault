@@ -1,6 +1,7 @@
 # WP-04 — Encrypted SQLite Bootstrap and Key Management
 
-Document status: Approved
+Document status: Founder Approved — local ODS commit authorized; ODS push and live verification pending
+Previous revision status: Approved (2026-07-22)
 
 **Recorded WP status: Implemented and statically validated, including two post-review security remediation rounds; committed, pushed and verified; Android Runtime Validation Pending.**
 
@@ -10,6 +11,17 @@ Mode: High
 Commit: `99e9d9c52865d0d736af765702f514637133caed` — "feat: add encrypted SQLite bootstrap foundation"
 
 This is the highest-risk work-package checkpoint implemented to date. WP-04 must never be described as Completed, runtime validated, production ready, or Android validated. The status phrase above is exact and must be reused verbatim elsewhere in this vault.
+
+## Current-state readiness update — 2026-07-24
+
+- Before this Draft consolidation, the home x64 repositories at `C:\Users\Robert\Projects\care-circle` and `C:\Users\Robert\Documents\ods-vault` matched `origin/main` and live GitHub, were 0 ahead / 0 behind, and had clean working trees with empty staging. The Care Circle application remains clean, synchronized and unchanged at `99e9d9c52865d0d736af765702f514637133caed`; the ODS Vault remains based on synchronized live HEAD `ebb46c05e5c47baec3c9935e864cc5207068257a` and now contains exactly eight unstaged Care Circle Draft modifications pending review, with empty staging, no untracked repository files, and no commit or push performed.
+- Installed and verified Android tooling: Eclipse Temurin JDK 17.0.19 (with the existing JDK 25 preserved), Android Studio stable 2026.1.2, Android SDK Platform 36.1, Sources for Android 36.1, Build-Tools 36.0.0, Platform-Tools 37.0.0, Command-line Tools 22.0 and Android Emulator 36.6.11.
+- `JAVA_HOME` points to the verified JDK 17 root. `ANDROID_HOME` points to `C:\Users\Robert\AppData\Local\Android\Sdk`. Required Android user `Path` entries are persisted once each.
+- WHPX acceleration is available and usable.
+- The ChatGPT Business/Codex local pilot opened the correct application repository, read the Git/private-remote baseline, inspected Java/Android state, exercised Android executables only with explicit unrestricted-execution approval, and preserved both real repositories unchanged. Managed sandbox restrictions and the persistent user environment were independently verified.
+- Still absent and not yet authorized: Android Virtual Device, Android system image, project `node_modules`, `android/`, `ios/`, `android.package`, `ios.bundleIdentifier`, Expo prebuild, native build, APK installation and SQLCipher Android runtime validation.
+
+**Tooling and execution-environment readiness are not native runtime validation. WP-04 remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending.**
 
 ## Objective
 
@@ -108,7 +120,7 @@ Application ports/services import nothing from Expo/React Native (validator-enfo
 
 ## Native build result — not attempted
 
-Read-only environment inspection found no Java, no `ANDROID_HOME`/Android SDK, no `adb`, and no Gradle, and `app.json` has no `android.package`/`ios.bundleIdentifier` configured. Per the mandatory rules, either condition alone requires stopping before the native/prebuild stage — no tooling was installed and no application identifier was invented. The `android/` directory does not exist and was not generated.
+The earlier 2026-07-21 environment inspection found no usable Android toolchain and stopped before native/prebuild work. As of 2026-07-24, the home x64 Android toolchain is installed and verified, but `app.json` still has no `android.package`/`ios.bundleIdentifier`, project dependencies are not installed, and no device/emulator setup has been authorized. No application identifier was invented. The `android/` directory does not exist and was not generated.
 
 ## Android runtime evidence — not available
 
@@ -140,6 +152,6 @@ Committed and pushed to `origin/main` as `99e9d9c52865d0d736af765702f514637133ca
 **Source repository:** https://github.com/robertsrdic-glitch/care-circle.git
 **Source path:** docs/releases/WP-04-Encrypted-SQLite-Bootstrap-and-Key-Management.md; PROJECT-STATUS.md
 **Source commit or commit range:** 99e9d9c52865d0d736af765702f514637133caed
-**Consolidated on:** 2026-07-22
-**Canonical ODS status:** Approved (recorded WP status: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
-**Notes:** Structured consolidation of the full WP-04 release document (the longest and most detailed source in the repository) and PROJECT-STATUS.md's WP-04 sections. All security findings, remediation rounds, and limitations preserved in full. The release document's closing line ("No commit or push has occurred") is a stale pre-commit statement superseded by the verified Git baseline supplied for this consolidation (HEAD/origin/main/live-remote all match `99e9d9c52865d0d736af765702f514637133caed`). No claim of Android runtime validation, production readiness, or completion is made anywhere in this document.
+**Consolidated on:** 2026-07-22; current-state Draft update prepared 2026-07-24
+**Canonical ODS status:** Founder Approved — local ODS commit authorized; ODS push and live verification pending (previous revision Approved; recorded WP status remains: Implemented and statically validated; committed, pushed and verified; Android Runtime Validation Pending)
+**Notes:** The Approved revision is a structured consolidation of the full WP-04 release document and PROJECT-STATUS.md's WP-04 sections. The 2026-07-24 Draft update adds verified home x64 tooling and controlled-execution readiness from four supporting-evidence files without changing the recorded WP status. No claim of Android runtime validation, production readiness or completion is made.
